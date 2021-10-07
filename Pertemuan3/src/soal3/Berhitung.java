@@ -17,10 +17,13 @@ public class Berhitung {
         do{
             //input operasi
             int a=input.nextInt();
-            char operator=input.next().charAt(0);
+            char op=input.next().charAt(0);
             int b=input.nextInt();
-        
-            switch(operator){
+            if((a<1 || a>1000) && (b<1 || b>1000)) {
+                System.out.println("Angka melebihi batas");
+            }else{
+            
+            switch(op){
                 case '+':
                     System.out.println(a+b);
                     break;
@@ -31,7 +34,12 @@ public class Berhitung {
                     System.out.println(a*b);
                     break;
                 case '/':
-                    System.out.println(a/b);
+                     if(a%b!=0){
+                        System.out.println("bilangan a tidak habis dibagi b");
+                    }else{
+                         System.out.println(a/b);
+                    }
+                    
                     break;
                 case '%':
                     System.out.println(a%b);
@@ -41,8 +49,11 @@ public class Berhitung {
                     break;
             
             }
+            }
             System.out.println("Ingin berhitung lagi?(y/n)");
             lagi=input.next().charAt(0);
         }while(lagi=='y');
+        
+        
     }
 }

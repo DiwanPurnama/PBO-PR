@@ -18,6 +18,6 @@ public class inputOutput1 {
         String[] arr=s.split("[ !,?._'@]");
         System.out.println(arr.length);
         for(String a:arr)
-            System.out.println(a);
+            System.out.println(a);      
     }
 }

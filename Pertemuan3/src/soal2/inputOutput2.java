@@ -23,7 +23,7 @@ public class inputOutput2 {
     
         System.out.println("===================");
         for(int j=0;j<3;j++){
-            System.out.format("%-15s%03d%n",s[j],x[j]);
+            System.out.printf("%-15s%03d%n",s[j],x[j]);
         }
         System.out.println("===================");
     }
