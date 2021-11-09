@@ -7,7 +7,7 @@ package exercise2;
 
 /**
  *
- * @author Windows 10
+ * @author Diwanp
  */
 public class Square extends Rectangle {
     
@@ -46,6 +46,7 @@ public class Square extends Rectangle {
     
     @Override
     public String toString(){
-        return "A Square with side= " + getSide() + ", which is a subclass of " + super.toString();
+        return "A Square with side= " + getSide() + ", which is a subclass of "
+                + super.toString();
     }
 }
