@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html -->
+<html amp="amp" lang="in" amp-version="2111242025001" class="i-amphtml-singledoc i-amphtml-standalone"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style amp-runtime="">html{overflow-x:hidden!important}html.i-amphtml-fie{height:100%!important;width:100%!important}html:not([amp4ads]),html:not([amp4ads]) body{height:auto!important}html:not([amp4ads]) body{margin:0!important}body{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}html.i-amphtml-singledoc.i-amphtml-embedded{-ms-touch-action:pan-y pinch-zoom;touch-action:pan-y pinch-zoom}html.i-amphtml-fie>body,html.i-amphtml-singledoc>body{overflow:visible!important}html.i-amphtml-fie:not(.i-amphtml-inabox)>body,html.i-amphtml-singledoc:not(.i-amphtml-inabox)>body{position:relative!important}html.i-amphtml-ios-embed-legacy>body{overflow-x:hidden!important;overflow-y:auto!important;position:absolute!important}html.i-amphtml-ios-embed{overflow-y:auto!important;position:static}#i-amphtml-wrapper{overflow-x:hidden!important;overflow-y:auto!important;position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;margin:0!important;display:block!important}html.i-amphtml-ios-embed.i-amphtml-ios-overscroll,html.i-amphtml-ios-embed.i-amphtml-ios-overscroll>#i-amphtml-wrapper{-webkit-overflow-scrolling:touch!important}#i-amphtml-wrapper>body{position:relative!important;border-top:1px solid transparent!important}#i-amphtml-wrapper+body{visibility:visible}#i-amphtml-wrapper+body .i-amphtml-lightbox-element,#i-amphtml-wrapper+body[i-amphtml-lightbox]{visibility:hidden}#i-amphtml-wrapper+body[i-amphtml-lightbox] .i-amphtml-lightbox-element{visibility:visible}#i-amphtml-wrapper.i-amphtml-scroll-disabled,.i-amphtml-scroll-disabled{overflow-x:hidden!important;overflow-y:hidden!important}amp-instagram{padding:54px 0px 0px!important;background-color:#fff}amp-iframe iframe{box-sizing:border-box!important}[amp-access][amp-access-hide]{display:none}[subscriptions-dialog],body:not(.i-amphtml-subs-ready) [subscriptions-action],body:not(.i-amphtml-subs-ready) [subscriptions-section]{display:none!important}amp-experiment,amp-live-list>[update]{display:none}amp-list[resizable-children]>.i-amphtml-loading-container.amp-hidden{display:none!important}amp-list [fetch-error],amp-list[load-more] [load-more-button],amp-list[load-more] [load-more-end],amp-list[load-more] [load-more-failed],amp-list[load-more] [load-more-loading]{display:none}amp-list[diffable] div[role=list]{display:block}amp-story-page,amp-story[standalone]{min-height:1px!important;display:block!important;height:100%!important;margin:0!important;padding:0!important;overflow:hidden!important;width:100%!important}amp-story[standalone]{background-color:#000!important;position:relative!important}amp-story-page{background-color:#757575}amp-story .amp-active>div,amp-story .i-amphtml-loader-background{display:none!important}amp-story-page:not(:first-of-type):not([distance]):not([active]){transform:translateY(1000vh)!important}amp-autocomplete{position:relative!important;display:inline-block!important}amp-autocomplete>input,amp-autocomplete>textarea{padding:0.5rem;border:1px solid rgba(0,0,0,0.33)}.i-amphtml-autocomplete-results,amp-autocomplete>input,amp-autocomplete>textarea{font-size:1rem;line-height:1.5rem}[amp-fx^=fly-in]{visibility:hidden}amp-script[nodom],amp-script[sandboxed]{position:fixed!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important;visibility:hidden}
+/*# sourceURL=/css/ampdoc.css*/[hidden]{display:none!important}.i-amphtml-element{display:inline-block}.i-amphtml-blurry-placeholder{transition:opacity 0.3s cubic-bezier(0.0,0.0,0.2,1)!important;pointer-events:none}[layout=nodisplay]:not(.i-amphtml-element){display:none!important}.i-amphtml-layout-fixed,[layout=fixed][width][height]:not(.i-amphtml-layout-fixed){display:inline-block;position:relative}.i-amphtml-layout-responsive,[layout=responsive][width][height]:not(.i-amphtml-layout-responsive),[width][height][heights]:not([layout]):not(.i-amphtml-layout-responsive),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-layout-responsive){display:block;position:relative}.i-amphtml-layout-intrinsic,[layout=intrinsic][width][height]:not(.i-amphtml-layout-intrinsic){display:inline-block;position:relative;max-width:100%}.i-amphtml-layout-intrinsic .i-amphtml-sizer{max-width:100%}.i-amphtml-intrinsic-sizer{max-width:100%;display:block!important}.i-amphtml-layout-container,.i-amphtml-layout-fixed-height,[layout=container],[layout=fixed-height][height]:not(.i-amphtml-layout-fixed-height){display:block;position:relative}.i-amphtml-layout-fill,.i-amphtml-layout-fill.i-amphtml-notbuilt,[layout=fill]:not(.i-amphtml-layout-fill),body noscript>*{display:block;overflow:hidden!important;position:absolute;top:0;left:0;bottom:0;right:0}body noscript>*{position:absolute!important;width:100%;height:100%;z-index:2}body noscript{display:inline!important}.i-amphtml-layout-flex-item,[layout=flex-item]:not(.i-amphtml-layout-flex-item){display:block;position:relative;-ms-flex:1 1 auto;flex:1 1 auto}.i-amphtml-layout-fluid{position:relative}.i-amphtml-layout-size-defined{overflow:hidden!important}.i-amphtml-layout-awaiting-size{position:absolute!important;top:auto!important;bottom:auto!important}i-amphtml-sizer{display:block!important}@supports (aspect-ratio:1/1){i-amphtml-sizer.i-amphtml-disable-ar{display:none!important}}.i-amphtml-blurry-placeholder,.i-amphtml-fill-content{display:block;height:0;max-height:100%;max-width:100%;min-height:100%;min-width:100%;width:0;margin:auto}.i-amphtml-layout-size-defined .i-amphtml-fill-content{position:absolute;top:0;left:0;bottom:0;right:0}.i-amphtml-replaced-content,.i-amphtml-screen-reader{padding:0!important;border:none!important}.i-amphtml-screen-reader{position:fixed!important;top:0px!important;left:0px!important;width:4px!important;height:4px!important;opacity:0!important;overflow:hidden!important;margin:0!important;display:block!important;visibility:visible!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:8px!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:12px!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:16px!important}.i-amphtml-unresolved{position:relative;overflow:hidden!important}.i-amphtml-select-disabled{-webkit-user-select:none!important;-ms-user-select:none!important;user-select:none!important}.i-amphtml-notbuilt,[layout]:not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element){position:relative;overflow:hidden!important;color:transparent!important}.i-amphtml-notbuilt:not(.i-amphtml-layout-container)>*,[layout]:not([layout=container]):not(.i-amphtml-element)>*,[width][height][heights]:not([layout]):not(.i-amphtml-element)>*,[width][height][sizes]:not([layout]):not(.i-amphtml-element)>*{display:none}amp-img:not(.i-amphtml-element)[i-amphtml-ssr]>img.i-amphtml-fill-content{display:block}.i-amphtml-notbuilt:not(.i-amphtml-layout-container),[layout]:not([layout=container]):not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element){color:transparent!important;line-height:0!important}.i-amphtml-ghost{visibility:hidden!important}.i-amphtml-element>[placeholder],[layout]:not(.i-amphtml-element)>[placeholder],[width][height][heights]:not([layout]):not(.i-amphtml-element)>[placeholder],[width][height][sizes]:not([layout]):not(.i-amphtml-element)>[placeholder]{display:block;line-height:normal}.i-amphtml-element>[placeholder].amp-hidden,.i-amphtml-element>[placeholder].hidden{visibility:hidden}.i-amphtml-element:not(.amp-notsupported)>[fallback],.i-amphtml-layout-container>[placeholder].amp-hidden,.i-amphtml-layout-container>[placeholder].hidden{display:none}.i-amphtml-layout-size-defined>[fallback],.i-amphtml-layout-size-defined>[placeholder]{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;z-index:1}amp-img[i-amphtml-ssr]:not(.i-amphtml-element)>[placeholder]{z-index:auto}.i-amphtml-notbuilt>[placeholder]{display:block!important}.i-amphtml-hidden-by-media-query{display:none!important}.i-amphtml-element-error{background:red!important;color:#fff!important;position:relative!important}.i-amphtml-element-error:before{content:attr(error-message)}i-amp-scroll-container,i-amphtml-scroll-container{position:absolute;top:0;left:0;right:0;bottom:0;display:block}i-amp-scroll-container.amp-active,i-amphtml-scroll-container.amp-active{overflow:auto;-webkit-overflow-scrolling:touch}.i-amphtml-loading-container{display:block!important;pointer-events:none;z-index:1}.i-amphtml-notbuilt>.i-amphtml-loading-container{display:block!important}.i-amphtml-loading-container.amp-hidden{visibility:hidden}.i-amphtml-element>[overflow]{cursor:pointer;position:relative;z-index:2;visibility:hidden;display:initial;line-height:normal}.i-amphtml-layout-size-defined>[overflow]{position:absolute}.i-amphtml-element>[overflow].amp-visible{visibility:visible}template{display:none!important}.amp-border-box,.amp-border-box *,.amp-border-box :after,.amp-border-box :before{box-sizing:border-box}amp-pixel{display:none!important}amp-analytics,amp-auto-ads,amp-story-auto-ads{position:fixed!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important;visibility:hidden}html.i-amphtml-fie>amp-analytics{position:initial!important}[visible-when-invalid]:not(.visible),form [submit-error],form [submit-success],form [submitting]{display:none}amp-accordion{display:block!important}@media (min-width:1px){:where(amp-accordion>section)>:first-child{margin:0;background-color:#efefef;padding-right:20px;border:1px solid #dfdfdf}:where(amp-accordion>section)>:last-child{margin:0}}amp-accordion>section{float:none!important}amp-accordion>section>*{float:none!important;display:block!important;overflow:hidden!important;position:relative!important}amp-accordion,amp-accordion>section{margin:0}amp-accordion:not(.i-amphtml-built)>section>:last-child{display:none!important}amp-accordion:not(.i-amphtml-built)>section[expanded]>:last-child{display:block!important}
+/*# sourceURL=/css/ampshared.css*/</style><style amp-extension="amp-lightbox-gallery">.i-amphtml-lbg-caption-scroll{position:absolute!important;left:0!important;right:0!important;bottom:0!important;z-index:1;padding-top:40px!important;box-sizing:border-box!important;color:#fff;text-shadow:1px 0 5px rgba(0,0,0,0.4)!important;overflow:hidden!important;max-height:calc(80px + 3rem)!important;transition:max-height 0.3s ease-out!important;pointer-events:none!important}.i-amphtml-lbg-caption-text{padding:20px!important;pointer-events:all!important}.i-amphtml-lbg-caption-text:empty{display:none!important}[i-amphtml-lbg-caption-state=clip]{-webkit-mask-image:linear-gradient(0deg,transparent 0rem,rgba(0,0,0,0.2) 1rem,rgba(0,0,0,0.55) 2rem,#000 3rem);mask-image:linear-gradient(0deg,transparent 0rem,rgba(0,0,0,0.2) 1rem,rgba(0,0,0,0.55) 2rem,#000 3rem)}[i-amphtml-lbg-caption-state=expand]{overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;max-height:100%!important;transition:max-height 0.7s ease-out!important;-webkit-mask-image:linear-gradient(transparent,rgba(0,0,0,0.2) 20px,rgba(0,0,0,0.55) 40px,#000 60px);mask-image:linear-gradient(transparent,rgba(0,0,0,0.2) 20px,rgba(0,0,0,0.55) 40px,#000 60px)}.i-amphtml-lbg-caption-mask{min-height:1rem;width:100%!important;position:fixed!important;bottom:0!important;pointer-events:all!important}[i-amphtml-lbg-caption-state=clip]+.i-amphtml-lbg-caption-mask{z-index:1!important;background:transparent!important;transition:background-color 0.5s ease-out!important}[i-amphtml-lbg-caption-state=expand]+.i-amphtml-lbg-caption-mask{background-color:rgba(0,0,0,0.4)!important;top:0!important;z-index:0!important;transition:background-color 0.4s ease-in!important}.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-caption{display:none}.i-amphtml-lbg-top-bar{position:absolute!important;left:0!important;right:0!important;top:0!important;height:56px!important;z-index:1!important;background:linear-gradient(rgba(0,0,0,0.3),transparent)}@media (min-width:1024px){.i-amphtml-lbg-top-bar{height:80px!important}}.i-amphtml-lbg-button{position:absolute!important;cursor:pointer!important;width:24px;height:24px;padding:16px;box-sizing:content-box}@media (min-width:1024px){.i-amphtml-lbg-button{width:40px;height:40px;padding:20px}}.i-amphtml-lbg-button:after{content:""!important;width:100%!important;height:100%!important;display:block!important;background-repeat:no-repeat!important;background-position:50%!important}.i-amphtml-lbg-button[data-action=close]{top:0!important;right:0!important}.i-amphtml-lbg-button[data-action=close]:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m6.4 6.4 11.2 11.2zm11.2 0L6.4 17.6z' stroke='%23fff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E")}.i-amphtml-lbg-button[data-action=gallery]{top:0!important;left:0!important}.i-amphtml-lbg-button[data-action=gallery]:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff'%3E%3Crect x='3' y='3' width='6' height='8' rx='1' ry='1'/%3E%3Crect x='15' y='13' width='6' height='8' rx='1' ry='1'/%3E%3Crect x='11' y='3' width='10' height='8' rx='1' ry='1'/%3E%3Crect x='3' y='13' width='10' height='8' rx='1' ry='1'/%3E%3C/g%3E%3C/svg%3E")}.i-amphtml-lbg-button[data-action=slides]{top:0!important;left:0!important;display:none}.i-amphtml-lbg-button[data-action=slides]:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='4' width='16' height='16' rx='1' stroke-width='2' stroke='%23fff' fill='none'/%3E%3Ccircle fill='%23fff' cx='15.5' cy='8.5' r='1.5'/%3E%3Cpath fill='%23fff' d='M5 19v-6l3-3 5 5 3-3 3 3v4z'/%3E%3C/svg%3E")}.i-amphtml-lbg-button[data-action=next],.i-amphtml-lbg-button[data-action=prev]{top:0!important;bottom:0!important;margin:auto!important;filter:drop-shadow(0 0 1px black)!important;width:40px;height:40px;padding:20px}.i-amphtml-lbg-button[data-action=next]{right:0!important;left:auto!important}.i-amphtml-lbg-button[data-action=next]:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m10 7.4 4.6 4.6-4.6 4.6' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E")}.i-amphtml-lbg-button[data-action=prev]{right:auto!important;left:0!important}.i-amphtml-lbg-button[data-action=prev]:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 7.4 9.4 12l4.6 4.6' fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E")}[i-amphtml-lbg-single-item] .i-amphtml-lbg-button[data-action=gallery],[i-amphtml-lbg-single-item] .i-amphtml-lbg-button[data-action=next],[i-amphtml-lbg-single-item] .i-amphtml-lbg-button[data-action=prev]{visibility:hidden!important}.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-button[data-action=gallery],.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-button[data-action=next],.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-button[data-action=prev]{display:none!important}.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-button[data-action=slides]{display:block!important}[i-amphtml-lbg-fade]{animation-fill-mode:forwards;animation-duration:400ms}[i-amphtml-lbg-fade=in]{animation-name:fadeIn}[i-amphtml-lbg-fade=out]{animation-name:fadeOut}amp-lightbox-gallery[i-amphtml-lbg-fade]{position:relative;z-index:2147483642;animation-timing-function:cubic-bezier(0.8,0,0.2,1)}amp-lightbox-gallery .amp-carousel-button{display:none}amp-lightbox-gallery amp-carousel{background:transparent!important}.i-amphtml-lbg{position:fixed!important;z-index:2147483642}.i-amphtml-lbg,.i-amphtml-lbg-gallery,.i-amphtml-lbg-mask{top:0!important;left:0!important;right:0!important;bottom:0!important}.i-amphtml-lbg-gallery,.i-amphtml-lbg-mask{background-color:#000!important;position:absolute!important}.i-amphtml-lbg-gallery{display:none;top:56px!important;overflow:auto!important}@media (min-width:1024px){.i-amphtml-lbg-gallery{top:80px!important}}.i-amphtml-lbg-overlay:not([i-amphtml-lbg-fade]){opacity:0;visibility:hidden}.i-amphtml-lbg-overlay[i-amphtml-lbg-fade=in]{animation-timing-function:ease-in}.i-amphtml-lbg-overlay[i-amphtml-lbg-fade=out]{animation-timing-function:linear}.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-gallery{display:grid!important;-ms-flex-pack:center!important;justify-content:center!important;grid-gap:5px!important;grid-template-columns:repeat(3,1fr);grid-auto-rows:-webkit-min-content!important;grid-auto-rows:min-content!important;padding:5px}@media (min-width:1024px){.i-amphtml-lbg[gallery-view] .i-amphtml-lbg-gallery{grid-template-columns:repeat(4,249.75px)}}.i-amphtml-lbg-gallery-thumbnail{position:relative!important;padding-top:100%!important}.i-amphtml-lbg-gallery-thumbnail-img{width:100%!important;height:100%!important;position:absolute!important;top:0!important;-o-object-fit:cover!important;object-fit:cover!important;cursor:pointer!important}.i-amphtml-lbg-thumbnail-timestamp-container{background-color:#292d33;color:#fff;position:absolute;bottom:10px;left:10px;height:20px;border-radius:2px;opacity:0.8;width:20px}.i-amphtml-lbg-thumbnail-timestamp-container.i-amphtml-lbg-has-timestamp{font-size:12px;padding:0 5px 0 18px;line-height:1.3rem;width:auto}.i-amphtml-lbg-thumbnail-play-icon{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");height:16px;width:16px;position:absolute;left:2px;bottom:2px}amp-lightbox-gallery .i-amphtml-slide-item>*{height:auto}@keyframes fadeIn{0%{opacity:0}to{opacity:1;visibility:visible}}@keyframes fadeOut{0%{opacity:1}to{opacity:0;visibility:hidden}}
+/*# sourceURL=/extensions/amp-lightbox-gallery/0.1/amp-lightbox-gallery.css*/</style><style amp-extension="amp-loader">.i-amphtml-loader-background{position:absolute;top:0;left:0;bottom:0;right:0;background-color:#f8f8f8}.i-amphtml-new-loader{display:inline-block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:0;height:0;color:#aaa}.i-amphtml-new-loader-size-default,.i-amphtml-new-loader-size-small{width:72px;height:72px}.i-amphtml-new-loader-logo{transform-origin:center;opacity:0;animation:i-amphtml-new-loader-scale-and-fade-in 0.8s ease-in forwards;animation-delay:0.6s;animation-delay:calc(0.6s - var(--loader-delay-offset))}.i-amphtml-new-loader-size-small .i-amphtml-new-loader-logo{display:none}.i-amphtml-new-loader-logo-default{fill:currentColor;animation:i-amphtml-new-loader-fade-out 0.8s ease-out forwards;animation-delay:1.8s;animation-delay:calc(1.8s - var(--loader-delay-offset))}.i-amphtml-new-loader-has-shim{color:#fff!important}.i-amphtml-new-loader-shim{width:72px;height:72px;border-radius:50%;display:none;transform-origin:center;opacity:0;background-color:rgba(0,0,0,0.6);animation:i-amphtml-new-loader-scale-and-fade-in 0.8s ease-in forwards;animation-delay:0.6s;animation-delay:calc(0.6s - var(--loader-delay-offset))}.i-amphtml-new-loader-size-small .i-amphtml-new-loader-shim{width:48px;height:48px;margin:12px}.i-amphtml-new-loader-has-shim .i-amphtml-new-loader-shim{display:initial}.i-amphtml-new-loader-has-shim .i-amphtml-new-loader-logo-default{display:none}.i-amphtml-new-loader-has-shim .i-amphtml-new-loader-transparent-on-shim{fill:transparent!important}.i-amphtml-new-loader-logo,.i-amphtml-new-loader-shim,.i-amphtml-new-loader-spinner-wrapper{position:absolute;top:0;left:0;bottom:0;right:0}.i-amphtml-new-loader-spinner-wrapper{margin:12px}.i-amphtml-new-loader-spinner{stroke:currentColor;stroke-width:1.5px;opacity:0;animation:i-amphtml-new-loader-fade-in 0.8s ease-in forwards;animation-delay:1.8s;animation-delay:calc(1.8s - var(--loader-delay-offset))}.i-amphtml-new-loader-spinner-path{animation:frame-position-first-spin 0.6s steps(30),frame-position-infinite-spin 1.2s steps(59) infinite;animation-delay:2.8s,3.4s;animation-delay:calc(2.8s - var(--loader-delay-offset)),calc(3.4s - var(--loader-delay-offset))}.i-amphtml-new-loader-size-small .i-amphtml-new-loader-spinner{transform:scale(0.54545);stroke-width:2.75px}.i-amphtml-new-loader-size-small .i-amphtml-new-loader-spinner-path{animation-delay:1.4s,2s;animation-delay:calc(1.4s - var(--loader-delay-offset)),calc(2s - var(--loader-delay-offset))}.i-amphtml-new-loader *{animation-play-state:paused}.amp-active>.i-amphtml-new-loader *{animation-play-state:running}.i-amphtml-new-loader-ad-logo{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.i-amphtml-new-loader-ad-label{all:initial!important;display:inline-block!important;padding:0 0.4ch!important;border:1px solid!important;border-radius:2px!important;color:currentColor!important;font-size:11px!important;font-family:sans-serif!important;line-height:1.1!important;visibility:inherit!important}@keyframes i-amphtml-new-loader-fade-in{0%{opacity:0}to{opacity:1}}@keyframes i-amphtml-new-loader-fade-out{0%{opacity:1}to{opacity:0}}@keyframes i-amphtml-new-loader-scale-and-fade-in{0%{opacity:0;transform:scale(0)}50%{transform:scale(1)}to{opacity:1}}@keyframes frame-position-first-spin{0%{transform:translateX(0)}to{transform:translateX(-1440px)}}@keyframes frame-position-infinite-spin{0%{transform:translateX(-1440px)}to{transform:translateX(-4272px)}}
+/*# sourceURL=/extensions/amp-loader/0.1/amp-loader.css*/</style><style amp-extension="amp-ad">amp-ad iframe,amp-embed iframe{border:0!important;margin:0!important;padding:0!important;position:relative}.i-amphtml-ad-default-holder{position:absolute;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;background-color:hsla(0,0%,78%,0.05)}.i-amphtml-ad-default-holder:after{content:"Ad";content:attr(data-ad-holder-text);background-color:transparent;border-radius:2px;color:#696969;font-size:10px;line-height:1;font-family:Arial,sans-serif;padding:3px 4px 1px;border:1px solid #696969}amp-ad[sticky]{visibility:hidden;-ms-flex-align:center;align-items:center}amp-ad[type=adsense],amp-ad[type=doubleclick]{direction:ltr}amp-ad[data-a4a-upgrade-type=amp-ad-network-adsense-impl]>iframe,amp-ad[data-a4a-upgrade-type=amp-ad-network-doubleclick-impl]>iframe{min-height:0;min-width:0}amp-ad[data-a4a-upgrade-type=amp-ad-network-doubleclick-impl][height=fluid]>iframe{height:100%!important;width:100%!important;position:relative}amp-ad[data-a4a-upgrade-type=amp-ad-network-doubleclick-impl][height=fluid]{width:100%!important}amp-ad .amp-ad-close-button{position:absolute;visibility:visible;width:28px;height:28px;right:0;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='13' viewBox='341 8 13 13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%234F4F4F' d='M354 9.31 352.69 8l-5.19 5.19L342.31 8 341 9.31l5.19 5.19-5.19 5.19 1.31 1.31 5.19-5.19 5.19 5.19 1.31-1.31-5.19-5.19z' fill-rule='evenodd'/%3E%3C/svg%3E");background-size:13px 13px;background-position:9px;background-color:#fff;background-repeat:no-repeat;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.2);border:none;border-radius:12px 0 0 0}amp-ad .amp-ad-close-button:before{position:absolute;content:"";top:-20px;right:0;left:-20px;bottom:0}amp-ad[sticky=bottom-right] .amp-ad-close-button,amp-ad[sticky=bottom] .amp-ad-close-button,amp-ad[sticky=left] .amp-ad-close-button,amp-ad[sticky=right] .amp-ad-close-button{top:-28px}amp-ad[sticky=top] .amp-ad-close-button{transform:rotate(270deg);bottom:-28px}amp-ad[sticky=left] .amp-ad-close-button{transform:rotate(90deg);left:0}[dir=rtl] amp-ad .amp-ad-close-button{right:auto;left:0;border-top-left-radius:0;border-top-right-radius:12px;background-position:6px}[dir=rtl] amp-ad .amp-ad-close-button:before{right:-20px;left:0}amp-ad[sticky]{z-index:11;position:fixed;overflow:visible!important;box-shadow:0 0 5px 0 rgba(0,0,0,0.2)!important;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}amp-ad[sticky=top]{padding-bottom:5px}amp-ad[sticky=bottom],amp-ad[sticky=top]{width:100%!important;max-height:20%!important;background:#fff}amp-ad[sticky=bottom]{max-width:100%;padding-bottom:env(safe-area-inset-bottom,0px);bottom:0;padding-top:4px}amp-ad[sticky=bottom-right]{bottom:0;right:0}amp-ad[sticky=left],amp-ad[sticky=right]{background:#fff}amp-ad[sticky=left] iframe,amp-ad[sticky=right] iframe{max-width:120px!important}amp-ad[sticky=left]{left:0}amp-ad[sticky=right]{right:0}@media (max-width:1024px){amp-ad[sticky=left],amp-ad[sticky=right]{display:none!important}}
+/*# sourceURL=/extensions/amp-ad/0.1/amp-ad.css*/</style><style amp-extension="amp-form">form.amp-form-submit-error [submit-error],form.amp-form-submit-success [submit-success],form.amp-form-submitting [submitting]{display:block}textarea[autoexpand]:not(.i-amphtml-textarea-max){overflow:hidden!important}.i-amphtml-textarea-clone{visibility:hidden;position:absolute;top:-9999px;left:-9999px;height:0!important}.i-amphtml-validation-bubble{transform:translate(-50%,-100%);background-color:#fff;box-shadow:0 5px 15px 0 rgba(0,0,0,.5);max-width:200px;position:absolute;display:block;box-sizing:border-box;padding:10px;border-radius:5px}.i-amphtml-validation-bubble:after{content:" ";position:absolute;bottom:-8px;left:30px;width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #fff}[visible-when-invalid]{color:red}
+/*# sourceURL=/extensions/amp-form/0.1/amp-form.css*/</style><style amp-extension="amp-image-lightbox">amp-image-lightbox{position:fixed!important;top:0!important;left:0!important;bottom:0!important;right:0!important;margin:0!important;padding:0!important;overflow:hidden!important;transform:translateZ(0)!important;-ms-touch-action:none!important;touch-action:none!important;z-index:1000;background:rgba(0,0,0,0.95);color:#f2f2f2}.i-amphtml-image-lightbox-container{position:absolute;z-index:0;top:0;left:0;right:0;bottom:0;overflow:hidden;transform:translateZ(0)}.i-amphtml-image-lightbox-trans{pointer-events:none!important;position:fixed;z-index:1001;top:0;left:0;bottom:0;right:0}.i-amphtml-image-lightbox-caption{position:absolute!important;z-index:2;bottom:0!important;left:0!important;right:0!important}.i-amphtml-image-lightbox-caption.i-amphtml-empty,.i-amphtml-image-lightbox-view-mode .i-amphtml-image-lightbox-caption{visibility:hidden}.amp-image-lightbox-caption{background:rgba(0,0,0,0.5);max-height:25%;padding:8px}.i-amphtml-image-lightbox-viewer{position:absolute;z-index:1;top:0;left:0;right:0;bottom:0;overflow:hidden;transform:translateZ(0)}.i-amphtml-image-lightbox-viewer-image{position:absolute;z-index:1;display:block;transform-origin:50% 50%}
+/*# sourceURL=/extensions/amp-image-lightbox/0.1/amp-image-lightbox.css*/</style><style amp-extension="amp-accordion">amp-accordion>section>:last-child{display:none!important}amp-accordion>section[expanded]>:last-child{display:block!important}.i-amphtml-accordion-content,.i-amphtml-accordion-header{margin:0}.i-amphtml-accordion-header{cursor:pointer;background-color:#efefef;padding-right:20px;border:1px solid #dfdfdf}amp-accordion>section:not([expanded]) .i-amphtml-media-component,amp-accordion>section:not([expanded]) .i-amphtml-media-component *{display:none!important;visibility:hidden!important}
+/*# sourceURL=/extensions/amp-accordion/0.1/amp-accordion.css*/</style><style amp-extension="amp-sidebar">amp-sidebar{--story-page-vh:1vh;position:fixed!important;top:0;max-height:100vh!important;height:100vh;max-width:80vw;background-color:#efefef;min-width:45px!important;outline:none;overflow-x:hidden!important;overflow-y:auto!important;z-index:2147483647;-webkit-overflow-scrolling:touch;will-change:transform}amp-sidebar[side=left]{left:0!important;transform:translateX(-100%);animation-name:i-amphtml-sidebar-slide-out-left}amp-sidebar[side=left][open]{animation-name:i-amphtml-sidebar-slide-in-left}amp-sidebar[side=right]{right:0!important;transform:translateX(100%);animation-name:i-amphtml-sidebar-slide-out-right}amp-sidebar[side=right][open]{animation-name:i-amphtml-sidebar-slide-in-right}amp-sidebar[side][i-amphtml-sidebar-opened]{transform:none;animation:none}.i-amphtml-sidebar-mask,amp-sidebar[side]{animation-duration:233ms;animation-timing-function:cubic-bezier(0,0,.21,1);animation-fill-mode:forwards}.i-amphtml-toolbar>ol,.i-amphtml-toolbar>ul{display:-ms-flexbox;display:flex;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-wrap:wrap;flex-wrap:wrap;overflow:auto;list-style-type:none;padding:0;margin:0}.amp-sidebar-mask{background-color:rgba(0,0,0,0.5)}.i-amphtml-sidebar-mask{position:fixed!important;top:0!important;left:0!important;width:100vw!important;height:100vh!important;background-image:none!important;animation-name:i-amphtml-sidebar-mask-fade-out;z-index:2147483646}.i-amphtml-sidebar-mask[open]{animation-name:i-amphtml-sidebar-mask-fade-in}.i-amphtml-sidebar-mask[i-amphtml-sidebar-opened]{animation:none}@keyframes i-amphtml-sidebar-slide-in-left{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i-amphtml-sidebar-slide-out-left{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes i-amphtml-sidebar-slide-in-right{0%{transform:translateX(100%)}to{transform:translateX(0)}}@keyframes i-amphtml-sidebar-slide-out-right{0%{transform:translateX(0)}to{transform:translateX(100%)}}@keyframes i-amphtml-sidebar-mask-fade-in{0%{opacity:0}to{opacity:1}}@keyframes i-amphtml-sidebar-mask-fade-out{0%{opacity:1}to{opacity:0}}
+/*# sourceURL=/extensions/amp-sidebar/0.1/amp-sidebar.css*/</style><style amp-extension="amp-social-share">.amp-social-share-facebook{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M212 197h-37v60h37v176h70V257h50l5-60h-55v-33c0-14 3-20 17-20h38V83h-49c-52 0-76 23-76 67v47z'/%3E%3C/svg%3E")}.amp-social-share-pinterest{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M267 77c-101 0-151 71-151 131 0 36 14 69 43 81 5 2 9 0 11-6l4-16c1-6 1-8-3-12-8-10-14-23-14-42 0-53 40-101 104-101 57 0 88 35 88 81 0 61-27 112-67 112-22 0-39-18-33-40 6-27 18-56 18-75 0-17-9-32-28-32-23 0-41 24-41 55 0 20 7 33 7 33l-27 115c-9 34-2 76-1 80 0 3 4 3 5 1 2-2 29-35 38-69l15-58c7 14 29 27 51 27 68 0 114-62 114-145 0-62-53-120-133-120z'/%3E%3C/svg%3E")}.amp-social-share-linkedin{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M186.4 142.4c0 19-15.3 34.5-34.2 34.5-18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5 18.9 0 34.2 15.5 34.2 34.5zm-5 58.9h-57.8v186.8h57.8V201.3zm92.4 0h-55.4v186.8h55.4v-98c0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9v98H398V269.8c0-50-28.3-74.2-68-74.2-39.6 0-56.3 30.9-56.3 30.9v-25.2h.1z'/%3E%3C/svg%3E")}.amp-social-share-email{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M101 142v229h310V142H101zm275 26-120 91-120-91h240zm-248 26 64 49-64 64V194zm0 150 85-85 43 33 43-33 85 85H128zm256-36-64-65 64-49v114z'/%3E%3C/svg%3E")}.amp-social-share-twitter{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h400v400H0z'/%3E%3Cpath fill='%23FFF' fill-rule='nonzero' d='M153.6 301.6c94.4 0 146-78.2 146-146 0-2.2 0-4.4-.2-6.6a104.4 104.4 0 0 0 25.6-26.5 102.4 102.4 0 0 1-29.5 8 51.5 51.5 0 0 0 22.6-28.3 102.8 102.8 0 0 1-32.6 12.4 51.3 51.3 0 0 0-87.4 46.8 145.6 145.6 0 0 1-105.7-53.6 51.3 51.3 0 0 0 15.9 68.5 51 51 0 0 1-23.3-6.4v.6a51.3 51.3 0 0 0 41.1 50.3 51.2 51.2 0 0 1-23.1.9 51.4 51.4 0 0 0 48 35.6 103 103 0 0 1-63.8 22 104.4 104.4 0 0 1-12.2-.7 145.2 145.2 0 0 0 78.6 23'/%3E%3C/g%3E%3C/svg%3E")}.amp-social-share-tumblr{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M211 80c-2 19-7 34-13 46a96 96 0 0 1-59 50v50h39v125c0 16 1 28 5 37 3 8 9 16 18 24s20 13 32 17c13 5 27 7 43 7a174 174 0 0 0 81-20v-56a97 97 0 0 1-54 18c-10 0-19-3-27-7-6-4-10-8-12-14s-3-19-3-40v-91h85v-56h-85V80h-50z'/%3E%3C/svg%3E")}.amp-social-share-whatsapp{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cpath fill='%23FFF' d='M35.4 10.4a18.27 18.27 0 0 0-31.2 13c0 3.2.9 6.3 2.4 9.1L4 42l9.7-2.5c2.7 1.5 5.7 2.2 8.7 2.2a18.4 18.4 0 0 0 13-31.3zM22.5 38.6c-2.7 0-5.4-.7-7.7-2.1l-.6-.3-5.8 1.5L9.9 32l-.4-.6c-4.4-7.1-2.3-16.5 4.9-20.9 7.2-4.4 16.5-2.3 20.9 4.9 4.4 7.2 2.3 16.5-4.9 20.9-2.3 1.5-5.1 2.3-7.9 2.3zm8.8-11.1-1.1-.5s-1.6-.7-2.6-1.2c-.1 0-.2-.1-.3-.1-.3 0-.5.1-.7.2l-1.5 1.7c-.1.2-.3.3-.5.3h-.1c-.1 0-.3-.1-.4-.2l-.5-.2c-1.1-.5-2.1-1.1-2.9-1.9-.2-.2-.5-.4-.7-.6-.7-.7-1.4-1.5-1.9-2.4l-.1-.2c-.1-.1-.1-.2-.2-.4 0-.2 0-.4.1-.5 0 0 .4-.5.7-.8.2-.2.3-.5.5-.7.2-.3.3-.7.2-1-.1-.5-1.3-3.2-1.6-3.8-.2-.3-.4-.4-.7-.5h-1.1c-.2 0-.4.1-.6.1l-.1.1c-.2.1-.4.3-.6.4-.2.2-.3.4-.5.6a5.1 5.1 0 0 0-.6 5.4l.1.3c.9 1.9 2.1 3.6 3.7 5.1l.4.4c.3.3.6.5.8.8 2.1 1.8 4.5 3.1 7.2 3.8.3.1.7.1 1 .2h1c.5 0 1.1-.2 1.5-.4.3-.2.5-.2.7-.4l.2-.2c.2-.2.4-.3.6-.5.2-.2.4-.4.5-.6.2-.4.3-.9.4-1.4v-.7s-.1-.1-.3-.2z'/%3E%3C/svg%3E")}.amp-social-share-line{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M443 233c0-84-84-152-188-152S67 149 67 233c0 76 67 139 157 151 7 1 15 4 17 9s1 12 1 17l-3 16c-1 5-4 19 16 10s108-63 148-109c27-30 40-60 40-94zm-254 45a4 4 0 0 1-4 4h-53a4 4 0 0 1-2-1 4 4 0 0 1-1-3v-82a4 4 0 0 1 4-3h13a4 4 0 0 1 3 3v65h36a4 4 0 0 1 4 4zm32 0a4 4 0 0 1-4 4h-13a4 4 0 0 1-4-4v-82a4 4 0 0 1 4-3h13a4 4 0 0 1 4 3zm90 0a4 4 0 0 1-3 4h-13a4 4 0 0 1-1 0h-1v-1a3 3 0 0 1-1-1l-38-50v48a4 4 0 0 1-4 4h-13a4 4 0 0 1-4-4v-82a4 4 0 0 1 4-3h16v1l38 51v-49a4 4 0 0 1 4-3h13a4 4 0 0 1 3 3zm73-69a4 4 0 0 1-3 4h-36v14h36a4 4 0 0 1 3 4v13a4 4 0 0 1-3 4h-36v13h36a4 4 0 0 1 3 4v13a4 4 0 0 1-3 4h-53a4 4 0 0 1-3-1 4 4 0 0 1-1-3v-82a4 4 0 0 1 1-2 4 4 0 0 1 3-1h53a4 4 0 0 1 3 3z' data-name='レイヤー 1'/%3E%3C/svg%3E")}.amp-social-share-sms{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='29'%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='3' d='M8.7 26v-5.7H2V2h26v18.4H15.9z'/%3E%3C/svg%3E")}.amp-social-share-system{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23fff'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 21 5a3 3 0 1 0-5.91.7L8.04 9.81A2.99 2.99 0 0 0 3 12a3 3 0 0 0 5.04 2.19l7.12 4.16A2.92 2.92 0 1 0 18 16.08z'/%3E%3C/svg%3E")}amp-social-share{background-repeat:no-repeat;background-position:50%;background-size:contain;text-decoration:none;cursor:pointer;position:relative}amp-social-share:focus{outline:2px solid #0389ff;outline-offset:2px}.amp-social-share-twitter{background-color:#1da1f2}.amp-social-share-facebook{background-color:#32529f}.amp-social-share-pinterest{background-color:#e60023}.amp-social-share-linkedin{background-color:#0077b5}.amp-social-share-tumblr{background-color:#3c5a77}.amp-social-share-email{background-color:#000}.amp-social-share-whatsapp{background-color:#25d366}.amp-social-share-line{background-color:#52b448}.amp-social-share-sms{background-color:#ca2b63}.amp-social-share-system{background-color:#000}
+/*# sourceURL=/extensions/amp-social-share/0.1/amp-social-share.css*/</style>
+
+<meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport">
+<meta content="IE=9; IE=8; IE=7; IE=EDGE; chrome=1" http-equiv="X-UA-Compatible">
+<meta content="blogger" name="generator">
+<link href="https://ilmu-detil.blogspot.com/favicon.ico" rel="icon" type="image/x-icon">
+<meta content="https://2.bp.blogspot.com/-idRUPfMJSCM/V-x5NMAiAiI/AAAAAAAAn_E/heQ09zS0BVgrNHYK_6Eh8EJl20Wj4GzqgCLcB/s1600/ms-icon-144x144.png" name="msapplication-TileImage">
+<link href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html" rel="canonical">
+<link href="https://ilmu-detil.blogspot.com/feeds/posts/default" rel="alternate" title="Pusat Ilmu Secara Detil- Atom" type="application/atom+xml">
+<link href="https://ilmu-detil.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Pusat Ilmu Secara Detil- RSS" type="application/rss+xml">
+<link href="https://www.blogger.com/feeds/3963559602023712541/posts/default" rel="alternate" title="Pusat Ilmu Secara Detil- Atom" type="application/atom+xml">
+<link href="https://www.blogger.com/openid-server.g" rel="openid.server">
+<link href="https://ilmu-detil.blogspot.com/" rel="openid.delgate">
+<link href="https://plus.google.com/117950600521728942551" rel="me">
+<link href="https://plus.google.com/117950600521728942551" rel="publisher">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Pembuatan Tabel dengan JTable pada Pemrograman Java</title>
+<link href="https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s72-c/cover.JPG" rel="image_src">
+<meta content="Pembuatan Tabel dengan JTable pada Pemrograman Java" property="og:title">
+<meta content="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html" property="og:url">
+<meta content="article" property="og:type">
+<meta content="Pusat Ilmu Secara Detil" property="og:site_name">
+<meta content="https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s200/cover.JPG" property="og:image">
+<meta content="M3SY_-oUMntzoM1mPUc48_q7yUHsZKNU5OwsXeuKuGM" name="google-site-verification">
+<meta content="100007330245062" property="fb:admins">
+<meta content="1594751820757783" property="fb:profile_id">
+<meta content="dtc-ilmu" name="Author">
+<meta content="https://web.facebook.com/pusat.ilmu.7" property="article:author">
+<meta content="Pusat Ilmu Secara Detil" name="twitter:site">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@ilmu-detil" name="twitter:creator">
+<link href="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/icon" rel="stylesheet" type="text/css">
+
+<!-- <style id='page-skin-1' type='text/css'><!--
+#layout #header{width:40%;float:left}
+#layout #main-wrapper{width:60%;float:left;}
+#layout #sidebar-kanan{width:40%;float:right;}
+#layout #cssmenu ul, #cssmenu li{list-style: none;}
+#layout ul,ol,li{list-style:none}
+#layout #footer1,#layout #footer2,#layout #footer3,#layout #footer4{width:40%;float:left;}
+
+-->
+<!-- Halaman Home pages bukan mobile -->
+<!-- Halaman Home pages versi mobile -->
+<!-- Halaman posting bukan mobile-->
+<script async="async" custom-element="amp-social-share" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-social-share-0.1.js.download"></script>
+<script async="async" custom-element="amp-iframe" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-iframe-0.1.js.download"></script>
+<style amp-custom="amp-custom">
+/*<![CDATA[*/
+
+/*Atur Gambar versi Kompi Ajaib */
+.img-center{text-align:center;margin:0 auto;}
+.img-left{clear:left;float:left;margin-bottom:1em;margin-right:1em;text-align:center;}
+.img-right{clear:right;float:right;margin-bottom:1em;margin-left:1em;text-align:center;}
+.img-width-300,.img-width-400,.img-width-500,.img-width-600{width:100%;text-align:center;clear:both}
+.img-width-300{max-width:300px;}
+.img-width-400{max-width:400px;}
+.img-width-500{max-width:500px;}
+.img-width-600{max-width:600px;}
+@media screen and (max-width:640px){
+.img-width-500.img-left,.img-width-500.img-right,.img-width-600.img-left,.img-width-600.img-right{clear:both;float:none;margin:1em auto;text-align:center;}
+}
+@media screen and (max-width:414px){
+.img-width-300.img-left,.img-width-300.img-right,.img-width-400.img-left,.img-width-400.img-right{clear:both;float:none;margin:1em auto;text-align:center;}
+}
+/*Bagian Akhir Atur Gambar versi Kompi Ajaib */
+
+
+/* Block example */
+.example {
+    margin-top:10px;
+    background: #e0f0ff;
+    padding: 5px 10px 1px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px #d0d0ff;
+    overflow: hidden;
+}
+/* akhir Block example */
+
+/*Membuat block footnote */
+.color-box {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+.shadow {
+    background: #F7F8F9;
+    padding: 3px;
+    margin: 10px 0;
+}
+.note-icon {
+    background: #47ADE0;
+}
+.info-tab {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+.info-tab {
+    float: left;
+    margin-left: -23px;
+}
+.note-box {
+    color: #144261;
+    background: #d5e9f6;
+}
+.note-box, .warning-box, .tip-box {
+    padding: 8px 8px 3px 26px;
+}
+/*Akhir dari Membuat block footnote */
+
+.tulisanwarna {color: #2f0cec;display:inline;}
+.judulbutton {
+    margin: auto;
+    background: #093c20e8;
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 1px rgba(101, 108, 122, 0.44);
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+    color: #dbdfe4;
+    max-width: 90%;
+}
+.related-post{margin:20px 20px 0;padding:0}
+.related-post h4{font-size:20px;margin:0 0 10px;}
+.related-post .underpost1,.related-post .underpost2{width:50%;display:inline-block;float:left;}
+.related-post .underpost1{margin-bottom:10px;}
+.related-post .underpost2{margin:20px 0;}
+.clear{clear:both;}
+@media screen and (max-width:414px){
+.related-post .underpost1,.related-post .underpost2{width:100%;display:block;float:none;}
+.related-post .underpost1{margin-bottom:0;}
+.related-post .underpost2{margin:20px 0 0;}
+}
+.judul {
+
+	background-color: #4267b2;
+    box-sizing: border-box;
+    font-stretch: inherit;
+    font-weight: inherit;
+    padding: 7px;
+    position: relative;
+    vertical-align: baseline;
+    color: beige;
+}
+.note {
+    background-color: #e6e6fc;
+    border-radius: 4px;
+    border: 1px solid rgb(209, 209, 232);
+    box-sizing: border-box;
+    color: #333333;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-stretch: inherit;
+    line-height: 22.8571px;
+    margin: 20px 0px;
+    padding: 20px;
+    vertical-align: baseline;;
+}
+
+em {
+    font-weight: 700;
+    color: #E91E63;
+}
+
+.note p {
+    padding: 0 0 10px;
+}
+.note p:last-child {
+    padding-bottom: 0;
+}
+.material-icons {vertical-align:-15%;font-size:inherit;text-rendering: optimizeLegibility;-moz-osx-font-smoothing: grayscale;}
+.material-icons.md-16{font-size:16px;}
+.material-icons.md-18{font-size:18px;}
+.material-icons.md-24{font-size:24px;vertical-align:-25%;}
+#judulblog,#title,.content-wrapper,.page-menu ul li,a:link{transition:all .4s ease-in-out}
+.page-menu ul li,li a{list-style:none}
+#bread,#header,#header-wrapper,#main-wrapper,.breadcrumbs,.comment_avatar,.credit,iframe{overflow:hidden}
+#header h1,#header p a,.descriptionwrapper,.post h1,.post h2,.post-body,.sidebar,body,p.description span{font-family: Roboto, sans-serif}
+li a{display:initial}
+#judul-post{border-bottom:1px solid #ddd}
+#main-wrapper,#sidebar-kanan,i.klik-url{word-wrap:break-word}
+#header,#judulblog,#search-box,#title,.content-wrapper,.komentar p,.search-field,table.gsc-search-box{position:relative}
+#navbar-iframe,.post-comment-link{visibility:hidden}
+#navbar-iframe{height:0;display:none}
+body{background:#fff;color: #212121;color: rgba(0,0,0,.87);font-size:100%;text-align:left;margin:0}
+a:link,a:visited{color:#141924;text-decoration:none}
+a:hover{color:#e8554e;text-decoration:none}
+a:active,a:focus,i:active,i:focus{outline:0}
+a:active{position:relative;top:1px;left:1px}
+a img{border-width:0}
+b{font-weight:500}
+#header-wrapper{float:left;display:inline;margin:0 20px 0 0;padding:0}
+#header{display:block;width:auto;margin:0;padding:0;z-index:1}
+#header-inner{background-position:center;margin:0;padding:0;display:block}
+#header h1,#header p.title{font-size:18px;font-weight:900;height:80px;line-height:80px;color:#efefef;padding:0;margin:0}
+.descriptionwrapper,p.description span{font-style:italic;font-weight:400;color:#141924;position:fixed;top:-1000px;left:-1000px}
+#header amp-img{border:0;background:0 0;width:auto;height:auto;margin:0 auto;vertical-align:middle}
+#judulblog{padding:0;margin:0;width:100%;box-shadow:2px 1px 1px rgba(0,0,0,.15);font-size:14px;font-weight:300;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:#fff;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#judulblog.fixed{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:all .4s ease;transition:all .4s ease;left:0;position:fixed;top:0;width:100%;z-index:999}
+.clear{clear:both}
+.content-wrapper{width:100%;max-width:980px;margin-left: auto;margin-right: auto;}
+#outer-wrapper{width:auto;text-align:left;margin:0;padding-top:30px;}
+#main-wrapper{width:680px;float:left;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#sidebar-kanan{width:300px;min-width:300px;float:right;padding:0;margin:30px 0 0}
+#sidebar-wrapper{width:300px;float:right;word-wrap:break-word;padding:0;margin:0}
+.sidebar h2{font-size:20px;font-weight:500;text-transform:uppercase;margin:0;padding:0 0 10px}
+.sidebar{line-height:1.3em;border-top:0;font-size:16px}
+.sidebar li{line-height:1.3em;margin:0;padding:5px 0 4px}
+.sidebar .widget{margin:0 0 20px;padding:0}
+.sidebar .widget-content{margin:0 auto;padding:0}
+.sidebar .widget-content amp-img,.sidebar .widget-content amp-ad{background-color:#f5f5f5;margin:0;display:block;padding:0;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);overflow:hidden;border-radius:2px}
+.sidebar ul{list-style:none;margin:0;padding:5px 0}
+#judul-post{background:#fff;margin:0;padding:10px 0;height:auto}
+::selection{background:#e8554e;color:#fff}
+/*AMP sidebar*/
+.btn-sidebaramp{display:none}
+amp-sidebar{width:240px;background:#27597a;color:#fff;}
+amp-sidebar ul{padding:0;list-style:none}
+amp-sidebar li{padding-left: 10px;line-height:40px;list-style:none;color:#fff;border-bottom:1px solid #30698f;text-align:left;font-size:14px}
+amp-sidebar li:nth-child(1){border-top:1px solid #30698f;}
+amp-sidebar li:hover{background:#2e6589}
+amp-sidebar li a{color:#fff;text-decoration:none;padding:5px 10px}
+amp-sidebar button{margin-left:20px}
+.amp-sidebar-image{line-height:100px;vertical-align:middle}
+.amp-close-image{top:15px;left:205px;cursor:pointer}
+a.sidebaramp{color:#fff;text-decoration:none}
+.amp-sidebar-about {min-width:240px;min-height:240px;text-align:center;font-size:14px;}
+.amp-sidebar-about p{padding:15px 15px 0 15px;line-height:1.4em}
+.amp-sidebar-profile {max-width:100px;min-width:100px;border-radius:100px;margin:20px auto;background:#517b94}
+.amp-sidebar-profile amp-img {border-radius:100px;}
+#sidebar h6 {border:none;background:none;font-size:14px;font-weight:normal;margin-left:10px}
+#sidebar p {line-height:1.6em}
+section[expanded] .show-more,section:not([expanded]) .show-less{display:none;}
+.contact-box {background:#194a6a;padding:20px;border-top:1px solid #30698f;text-align:left}
+.mobilemenu {background:#194a6a;text-align:left}
+h6 svg {
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 0px;
+   
+}
+.contact-box svg{width:20px; height:20px;vertical-align: -4px;margin-right:10px}
+.contact-box span svg path{fill:#accbdf}
+.contact-me {min-width:210px;display:block}
+p.soc-icon {margin-top:5px;height:30px;padding:0}
+.soc-icon svg{width:20px; height:20px;}
+.soc-icon span svg path{fill:#80aac6;transition: all .5s ease-in-out;}
+.soc-icon span svg:hover path{fill:#fff}
+.soc-icon .youtube svg {width: 24px;height: 24px;vertical-align: -2px;
+}
+.thumb-wrapper{padding-top:80px}
+.post{margin:0 auto;padding:0 30px 30px 0;background:#fff}
+#judul-post{position:fixed;top:-1000px;left:-1000px}
+.post h1{font-size:36px;font-weight:900;line-height:1.2em;margin:0;padding:0;text-transform:capitalize}
+.post h1 a,.post h1 a:visited,.post h1 strong{display:block;text-decoration:none;color:#141924}
+.post h1 a:hover,.post h1 strong{color:#e8554e}
+.post-body{margin:1em 0 .65em;font-size:17px;font-weight:400;line-height:1.6em;background-color: white; color: #333333;text-align: justify;}
+.post ol li,i.klik-url{cursor:default}
+::selection{background:#e8554e;color:#fff}
+.post-footer{color: #212121;color: rgba(0,0,0,.87);text-transform:none;letter-spacing:.01em;font:12px Arial;line-height:1.4em;margin:0}
+.comment-link{margin-left:.1em}
+.tr-caption{background:#ddd;border:1px solid #333;font:italic 10px Georgia;line-height:1.6em;color: #212121;color: rgba(0,0,0,.87)}
+.post-body .thumb-post{display:none}
+.judul_item{background:#4183D7;padding:0;overflow:hidden;}
+.judul_item p{font-size:36px;font-weight:300;line-height:1.2em;color:#fff;margin:100px 600px 0 0;padding:0;display:inline;float:left;text-transform:capitalize}
+.judul_item .content-wrapper{position:relative;height:370px}
+.judul_item .post-firstimage{position:absolute;bottom:-40px;right:-50px}
+.firstimage{width:600px;height:350px;-webkit-box-shadow:0 10px 50px 0 rgba(0,0,0,.25);-moz-box-shadow:0 10px 50px 0 rgba(0,0,0,.25);box-shadow:0 10px 50px 0 rgba(0,0,0,.25);-ms-transform:rotate(7deg);-webkit-transform:rotate(7deg);transform:rotate(7deg)}
+.feed-links{clear:both;line-height:2.5em}
+
+.search-wrapper{height:30px;float:right;display:inline;padding:25px 0;margin-top:-80px}
+#search-box{width:200px;height:27px;float:right;padding:0;margin:0;position:relative}
+#search-box form{border:1px solid #ccc;line-height:27px}
+.search-form{border:none;color:gray;width:100%;padding:0 30px 0 10px;height:27px;line-height:27px;font-size:14px;font-weight:400;margin:0;-moz-box-sizing:border-box;box-sizing:border-box}
+.search-button{background:0 0;width:30px;height:29px;line-height:29px;padding:0;text-align:center;margin:0;top:0;right:0;font-size:18px;color:#888;position:absolute;border:none;border-radius:0;text-shadow:none;box-shadow:none}
+.search-form:focus,.search-form:hover,.search-button:focus,.search-button:hover{border:none;outline:0;color:#000}
+
+.page-menu{float:left;width:auto;height:auto;padding:0;margin:0}
+.page-menu ul{line-height:3.7em}
+.page-menu ul li{display:inline-block;margin:0 auto;}
+.page-menu ul li a:hover{color:#e8554e}
+.page-menu ul li a{color: #212121;color: rgba(0,0,0,.87);padding:19px 20px 19px 0;font-size:16px;font-weight:400}
+.page-menu ul li a,.page-menu ul li a span{font-family:Roboto,sans-serif}
+
+#footer-wrapper{background:#4183D7;border-top:1px solid #ddd;border-bottom:1px solid #ddd;width:100%;margin-top:50px;padding:20px 0 30px;}
+#footer1{width:40%;padding:30px 30px 10px 0;display:inline;float:left;color:#f1f1f1;font-size:14px;font-weight:300;line-height:1.6em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#footer2,#footer3,#footer4{width:20%;padding:30px 0 10px 30px;display:inline;float:left;color:#f1f1f1;font-size:14px;font-weight:300;line-height:1.6em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#footer1 h2,#footer2 h2,#footer3 h2,#footer4 h2{font-size:16px;font-weight:700;color:#f1f1f1;margin:0}
+#footer1 a,#footer2 a,#footer3 a,#footer4 a{color:#f1f1f1;}
+#footer1 ul,#footer2 ul,#footer3 ul,#footer4 ul{list-style:none;padding:0;margin:5px 0}
+#footer-wrapper p{margin:0}
+#footer1 .logo-footer{clear:both;text-align:left;display:block}
+#footer1 .logo-footer img{margin-left:-6px}
+
+.creditpic{margin-top:10px;padding:20px 0 30px;position:relative}
+.credit{line-height:2.3em;font-size:12px;font-weight:400;color:#666;clear:both;margin:0 auto;padding:0;text-align:left}
+.credit-right{float:right}
+.credit a:link,.credit a:visited{color:#666;text-decoration:none}
+.credit a:hover{color:#e8554e;text-decoration:none}
+
+h3.date-header,.postmeta{font-size:16px;font-weight:400;padding:0;margin:20px 0 0 0;line-height:1;}
+.author a,.clock a,.postmeta a{font-size:16px;color:#141924;font-weight:400}
+.author a:hover,.clock a:hover,.postmeta a:hover{color:#e8554e}
+.updated{border-bottom:0}
+.post .jump-link{display:none}
+.post-author amp-img,.post-author img{padding:0;width:36px;height:36px;border-radius:100%;vertical-align:middle}
+
+.breadcrumbs a,.breadcrumbs li{display:inline-block}
+.breadcrumbs{line-height:1.5em;width:auto;padding:0 0 10px;font-size:14px;color:#444;margin:0 30px 0 0;font-weight:500;border-bottom:1px solid #dedede}
+.breadcrumbs li{list-style-type:none;float:left}
+.breadcrumbs a{text-decoration:none;outline:0;transition:all .3s ease-in-out;color:#444;font-weight:400}
+.breadcrumbs a:hover{color:#e8554e}
+
+.cookie-choices-info{border-bottom:1px solid #333;color:#555}
+.cookie-choices-info{z-index:1000000;background-color:#fff;border-top:1px solid #dedede;padding:3px 0;bottom:0;top:inherit}
+.cookie-choices-info .cookie-choices-text{font-size:17px;color:#666;font-family:"Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Calibri,Helvetica,Arial}
+.cookie-choices-info .cookie-choices-button{background-color:#adbcc5;border-radius:5px;padding:5px 12px;text-transform:none;color:#000;transition:all .2s linear}
+.cookie-choices-info .cookie-choices-button:nth-child(2){background-color:#f1d600}
+.cookie-choices-info .cookie-choices-button:hover,.cookie-choices-info .cookie-choices-button:nth-child(2):hover{background-color:#e9eef0}
+
+.PopularPosts .widget-content{padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.PopularPosts .widget-content ul{width:100%;padding:0;list-style-type:none}
+.PopularPosts .widget-content ul li{margin:0 0 10px;padding:0;position:relative;background-color:#f5f5f5;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);overflow:hidden;border-radius:2px}
+.PopularPosts .widget-content ul li .item-title{line-height:1.1em;padding:6px 10px 0 0}
+.PopularPosts .widget-content ul li .item-title a{text-decoration:none;font-size:16px;font-weight:500}
+.PopularPosts .widget-content ul li a:hover,.PopularPosts .widget-content ul li:hover a{color:#e8554e}
+.PopularPosts .item-snippet{font-size:14px;font-weight:400;margin-top:10px;line-height:1.1em;}
+.PopularPosts .widget-content ul li img{width:100px;height:70px;padding-right:0;transition:all .5s ease-out}
+.PopularPosts .item-thumbnail{float:left;margin:0 10px 0 0;width:100px;height:70px;overflow:hidden}
+.PopularPosts .item-thumbnail:hover img{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);-o-transform:scale(1.3);transform:scale(1.3)}
+
+#FeaturedPost1 h3{font-weight:500;margin:10px}
+#FeaturedPost1 h2{margin:10px;padding:0}
+#FeaturedPost1 p{margin: 0 10px 10px}
+#FeaturedPost1{background-color:#f5f5f5;margin:0 0 30px;display:block;padding:0;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);overflow:hidden;border-radius:2px}
+
+ul .label-show {margin:0 auto;padding:0}
+.label-show{list-style:none}
+.label-show:before,.label-show:after{content:"";display:table}
+.label-show:after{clear:both}
+.label-show li{position:relative;float:left;margin:0 12px 8px 0;padding:0;}
+.label-show li:after{content:"";position:absolute;top:50%;margin-top:-3px;right:-2px;width:5px;height:6px;opacity:.95;border-radius:3px 0 0 3px}
+.label-show a,.label-show span{display:block;box-sizing:border-box}
+.label-show a{color:#000;background:#f5f5f5;padding:5px 8px;z-index:1;border-radius:3px 0 0 3px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);transition:.3s box-shadow ease;-webkit-transition:.3s box-shadow ease;text-shadow:0 0 0}
+.label-show a:hover span{max-width:40px;padding:5px 8px}
+.label-show a:hover {box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);}
+.label-show span{position:absolute;top:0;bottom:0;left:100%;z-index:2;overflow:hidden;max-width:0;opacity:.95;color:#fff;vertical-align:middle;background-color:#333;transition:all .3s ease-out;
+padding:5px 0 5px 2px;border-radius:0 3px 3px 0}
+
+.post-body .separator a{margin:0}
+.post-body a:active{position:relative;top:1px;left:1px}
+.post-body a[href^="http://"],.post-body a[href^="https://"]{font-weight:500;color:#e8554e}
+.post-body a[href^="http://"]:after,.post-body a[href^="https://"]:after{content:'';background:url(https://1.bp.blogspot.com/-2iZ1bAZR7Es/V-y64CukndI/AAAAAAAAoAg/f-ZzunndUuIMDuNkOwIbRCcWB2zX7rrVgCLcB/s1600/ic_launch_black_24dp_1x.png)no-repeat;background-size: 18px 18px;width:18px;height:18px;display:inline-block;margin-left:5px;vertical-align:middle}
+.post-body .separator a:after,.post-body a[href^="https://kompidesign.blogspot.com/"]:after,.post-body a[href^="https://twitter.com/intent/tweet"]:after{content:'';background:none;width:0;height:0;margin-left:0}
+.post-body .separator img{width:auto;max-width:100%;height:auto}
+.post-body h2{font-size:23px;font-size:1.4375rem;margin:15px 0}
+.post-body h3{font-size:19px;font-size:1.1875rem;font-weight: 900;color:#333;margin:15px 0;}
+.post-body h4,.post-body h5,.post-body h6{font-size:16px;font-size:1rem;font-weight: 900;color:#333;margin:15px 0}
+
+blockquote{font-size:120%;border-left:3px solid #ddd;padding-left:15px}
+/* code{font-family:Consolas,Monaco,'Andale Mono',monospace;white-space:initial;word-spacing:normal;word-break:normal;hyphens:none;color:#000;font-size:90%;background:#eee;padding:3px 8px;font-style:normal}
+pre{background:#eee;border-left:5px solid #454545;padding:10px 15px;overflow:auto;max-width:100%;font-size:90%;line-height:1.1em}
+pre code{padding:0} */
+
+/* highlight kode tertentu */
+code{
+	background-color: #e9e9e9;
+    border-radius: 2px;
+	color: #bd4147;
+}
+/* akhir highlight kode tertentu */
+
+
+/* bagian kode highlight */
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/* akhir bagian kode highlight */
+
+/*bagian tabel */
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #FFFFFF;background:#F7F7F7;padding:0.5rem;text-align:left;color:#424242;font-size:16px;font-weight:300;line-height:24px;vertical-align:top}
+th{background:#0379C4;color:#fff;font-weight:400}
+/* akhir bagian tabel */
+
+/* figcaption ditengah */
+figure {
+    text-align: center;
+}
+/* akhir figcaption ditengah */
+
+/* bagian kode download */
+.downbfl{
+  text-align: center;
+}
+
+.lihat{
+ background-color: #316594;
+    border-radius: 4px;
+    border: 0px;
+    color: white;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 10px 0px 0px;
+    outline: 0px;
+    
+    text-decoration: none;
+    text-shadow: rgb(51, 51, 51) 1px 1px;
+    transition: all 0.25s;
+    vertical-align: baseline;
+	cursor: pointer;
+	padding: 0 10px;
+	width:120px;
+}
+
+a.lihat:hover {
+    border: 1px solid #77cc6d;
+    color: #77cc6d;
+    text-shadow: none;
+    transition: 0.3s ease-out;
+}
+.pemisah1{
+ background-color: white; border: 0px; color: #777777; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 27.9px; margin: 0px; padding: 0px; vertical-align: baseline;
+}
+
+.pemisah2{
+ background-color: white; border: 0px; color: #444444; font-family: arial, helvetica, sans-serif; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 16px; margin: 0px; padding: 0px; vertical-align: baseline;
+}
+
+.pemisah3{
+ background-color: white; border: 0px; color: #777777; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 27.9px; margin: 0px; padding: 0px; vertical-align: baseline;
+}
+.sedot{
+ background-color: #316594; 
+ border-radius: 4px; 
+ border: 0px; 
+ color: white; 
+ display: inline-block; 
+ font-family: Arial, Helvetica, sans-serif; 
+ font-size: 16px; 
+ font-stretch: inherit; 
+ font-style: inherit; 
+ font-variant: inherit; 
+ font-weight: 700; 
+ height: 32px; 
+ line-height: 32px; 
+ margin: 0px 10px 0px 0px; 
+ outline: 0px; 
+ text-decoration: none; 
+ text-shadow: rgb(51, 51, 51) 1px 1px; 
+ transition: all 0.25s; 
+ vertical-align: baseline; 
+ cursor: pointer;
+ padding: 0 10px;
+	width:120px;
+}
+
+a.sedot:hover {
+    border: 1px solid #77cc6d;
+    color: #77cc6d;
+    text-shadow: none;
+    transition: 0.3s ease-out;
+}
+a.lihat:visited {
+    color: #fff;
+}
+a.sedot:visited{
+    color: #fff;
+}
+/* akhir bagian kode download */
+
+
+/* bagian formula pecahan */
+.pecahan{border-radius: 8px; color: rgba(0,0,0,.87); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; margin: 2px -2px 12px; padding: 2px 8px;}
+.pecahan1{border-collapse: collapse; display: inline-table; margin: 0px 2px; text-align: center; vertical-align: middle;}
+.pecahan2{border-bottom: 1px solid black; display: table-row; font-size: 16px;}
+.pecahan3{display: table-row; font-size: 16px; }
+/* akhir formula pecahan */
+
+#blog-pager,.search-form,.blog-pager,.credit,{font-family: Roboto, sans-serif}
+#blog-pager-newer-link{float:left;font-size:200%;font-weight:400}
+#blog-pager-older-link{float:right;font-size:200%;font-weight:400}
+#blog-pager,.blog-pager{clear:both;text-align:center}
+#blog-pager-newer-link a,#blog-pager-older-link a,a.home-link{color:#141924;transition:all .4s ease-in-out}
+#blog-pager-newer-link a:hover,#blog-pager-older-link a:hover,a.home-link:hover{color:#e8554e}
+.halaman{line-height:1.2em;}
+#blog-pager-newer-link,#blog-pager-older-link{font-size:100%}
+.halaman-kanan,.halaman-kiri,.pager-title-left{transition:all .3s ease-in-out}
+.halaman{margin:20px 30px 20px 0;padding:0;height:auto}
+.halaman-kanan,.halaman-kiri{color:#141924;background:0 0;width:50%;position:relative;-moz-box-sizing:border-box;margin:0}
+#blog-pager,.dropdown-menu,.dropdown-menu li,.isihalaman-kanan,.isihalaman-kiri{margin:0}
+.halaman-kiri{height:auto;float:left;padding:0 10px 0 40px;text-align:left;box-sizing:border-box}
+.halaman-kanan{height:auto;float:right;padding:0 40px 0 10px;text-align:right;box-sizing:border-box}
+.halaman-kanan,.halaman-kiri{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.halaman-kanan a:hover,.halaman-kanan:hover .pager-title-left,.halaman-kiri a:hover,.halaman-kiri:hover .pager-title-left{color:#e8554e}
+.isihalaman-kiri .current-pageleft+.panahkiri,.isihalaman-kanan .current-pageright+.panahkanan,.current-pageleft,.current-pageright{color:#999}
+.current-pageleft,.current-pageright,.halaman-kanan a,.halaman-kiri a{font-size:130%;font-family: Roboto, sans-serif;font-weight:500;background:0 0;text-decoration:none}
+.halaman-kanan a,.halaman-kiri a{color:#141924;font-size:130%;font-weight:500}
+.panahkanan,.panahkiri{font-size:200%;position:absolute;top:50%;margin-top:-16px}
+.panahkiri{left:10px}
+.panahkanan{right:10px}
+
+h2.sharetitle{display:block;float:left;font-size:18px;margin:15px 0 5px;font-weight:500;line-height:1.4em}
+.donate{margin-top:10px;font-weight:400}
+
+.disqus-comments{margin-right:30px}
+
+.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes slideInUp{0%{-webkit-transform:translateY(100%);transform:translateY(100%);visibility:visible}
+100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+@keyframes slideInUp{0%{-webkit-transform:translateY(100%);transform:translateY(100%);visibility:visible}
+100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+/*Iklan*/
+.headerad{width:100%;height:auto;text-align:center;margin-bottom:10px;padding-bottom:30px;border-bottom:1px solid #ddd}
+.underpostad{width:100%;height:auto;text-align:center;margin:20px auto 0;padding:0;}
+.underpostad amp-img,.underpostad img,.postabovead amp-img,.postabovead img{width:auto;max-width:100%;height:auto;}
+.postabovead{width:300px;height:auto;display:inline;float:left;padding:0;margin:23px 20px 20px 0}
+
+@media screen and (max-width:880px){.content-wrapper{padding:0 10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#outer-wrapper{padding-top:10px}
+#main-wrapper{width:100%;margin:0;border-radius:0;border-left:none;border-right:none}
+.page-menu{width:100%;margin:0;text-align:center}
+.page-menu ul li a{padding:0 20px 0 0;}
+#search-box,.search-wrapper{float:none;display:block}
+.search-wrapper{margin-top:0;text-align:center;padding:0 0 10px}
+#search-box{width:auto;margin:0}
+#judulblog.fixed{position:relative;box-shadow:none;}
+#header-wrapper{padding-top:10px;margin: 0;text-align:center;float:none;display:block}
+#header{max-width:100%;text-align:center;float:none;display:block}
+#header h1,#header p.title{font-size:22px;font-weight:900;height:40px;line-height:40px}
+.thumb-wrapper{padding-top:0}
+.judul_item{background:#4183D7;padding:0;overflow:hidden;}
+.judul_item p{font-size:36px;font-weight:300;line-height:1.2em;color:#fff;margin:10px 0 0 0;padding:0;display:block;float:none;text-align:center;text-transform:capitalize}
+.judul_item .content-wrapper{position:relative;/*height:auto*/}
+.judul_item .post-firstimage{width:100%;height:auto;position:relative;bottom:-10px;right:0;margin:0 auto}
+.firstimage{width:100%;height:auto;-webkit-box-shadow:0 10px 50px 0 rgba(0,0,0,.25);-moz-box-shadow:0 10px 50px 0 rgba(0,0,0,.25);box-shadow:0 10px 50px 0 rgba(0,0,0,.25);-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}
+
+#main{margin:0}
+#blog-pager, .blog-pager{padding-right:0}
+.post{padding-right:0}
+.breadcrumbs{padding:5px 0 10px;margin:0;}
+.halaman{margin:20px 0 20px;}
+#footer-wrapper{display:none}
+.credit-right{float:none;margin-top:10px}
+.headerad{padding-bottom:5px}
+.headerad amp-img,.headerad img{width:auto;max-width:100%;height:auto;margin:0;}
+/*.lihat { width: 34%; padding-left: 0px;}*/
+}
+@media screen and (max-width:414px){._post-thumbnail-area{width:100%;margin: 7px 0 10px 0;display:block;float:none;height:auto;}
+._post-thumbnail{height:auto;}
+.page-menu ul li a{padding:0 10px;}
+h3.date-header,.postmeta{margin:10px 0 0 0;}
+.postabovead{width:100%;height:auto;display:block;float:none;padding:0;margin:10px 0}
+}
+@media screen and (max-width:320px){.post h2{font-size:18px}
+#sidebar-wrapper {
+    width: 300px;
+    float: right;
+    word-wrap: break-word;
+    margin: 0;
+}
+a.button-sub{display:none}
+}
+@media screen and (max-width:240px){.post h1,.post h2{font-size:16px}
+}
+
+@media print{#blog-pager,#comments,#css-menu,#shareOnscroll,.blog-pager,.breadcrumbs,.kompiajaib_info2,.onpost,.postmeta,.underpost,h3.date-header{display:none}
+#main-wrapper{width:100%}
+.post-body{padding:0}
+#judul-post,.breadcrumbs,.postmeta{margin:0}
+}
+/*]]>*/
+</style>
+<!-- Halaman posting versi mobile -->
+<!-- Halaman pages /p bukan mobile -->
+<!-- Halaman pages /p versi mobile -->
+<style amp-boilerplate="amp-boilerplate">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async="async" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/v0.js.download"></script>
+<script async="async" custom-element="amp-sidebar" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-sidebar-0.1.js.download"></script>
+<script async="async" custom-element="amp-form" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-form-0.1.js.download"></script>
+<!--<script async='async' custom-element='amp-iframe' src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'/>-->
+<!--<script async='async' custom-element='amp-youtube' src='https://cdn.ampproject.org/v0/amp-youtube-0.1.js'/>-->
+<script async="async" custom-element="amp-image-lightbox" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-image-lightbox-0.1.js.download"></script>
+<!--<script async='async' custom-element='amp-list' src='https://cdn.ampproject.org/v0/amp-list-0.1.js'/>-->
+<!--<script async='async' custom-template='amp-mustache' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js'/>-->
+<script async="async" custom-element="amp-analytics" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-analytics-0.1.js.download"></script>
+<!--<script async='async' custom-element='amp-carousel' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js'/>-->
+<script async="async" custom-element="amp-accordion" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-accordion-0.1.js.download"></script>
+<script async="async" custom-element="amp-ad" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-ad-0.1.js.download"></script>
+
+
+
+<script async="" custom-element="amp-auto-lightbox" data-script="amp-auto-lightbox" i-amphtml-inserted="" crossorigin="anonymous" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-auto-lightbox-0.1.js.download"></script><script async="" custom-element="amp-loader" data-script="amp-loader" i-amphtml-inserted="" crossorigin="anonymous" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-loader-0.1.js.download"></script><script async="" custom-element="amp-ad-network-adsense-impl" data-script="amp-ad-network-adsense-impl" i-amphtml-inserted="" crossorigin="anonymous" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-ad-network-adsense-impl-0.1.js.download"></script><script async="" custom-element="amp-lightbox-gallery" data-script="amp-lightbox-gallery" i-amphtml-inserted="" crossorigin="anonymous" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/amp-lightbox-gallery-0.1.js.download"></script><meta http-equiv="origin-trial" content="AxOH8+XUqIxXfDG7Bxf7YR6oBTF4f73xWZNTyqhrkvIEgEmpxrpX8rzEqe9/yOsCGW9ChT05U9t++yH/aCYKCAgAAACVeyJvcmlnaW4iOiJodHRwczovL2FtcHByb2plY3Qub3JnOjQ0MyIsImZlYXR1cmUiOiJDb252ZXJzaW9uTWVhc3VyZW1lbnQiLCJleHBpcnkiOjE2NDMxNTUxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWUsInVzYWdlIjoic3Vic2V0In0="><link rel="preload" referrerpolicy="origin" href="https://d-198590454673160338.ampproject.net/2111242025001/nameframe.html" as="fetch"></head><!--<head>
+<link href='https://www.blogger.com/static/v1/widgets/1324390690-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3963559602023712541&amp;zx=6f215a90-2140-4a08-89a5-6cc6ef9aab82' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3963559602023712541&amp;zx=6f215a90-2140-4a08-89a5-6cc6ef9aab82' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+<!-- data-ad-client=ca-pub-2846319934068545 -->
+
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="amp-mode-touch amp-mode-mouse amp-mode-keyboard-active" style="opacity: 1; visibility: visible; animation: 0s ease 0s 1 normal none running none;">--&gt;
+
+<amp-analytics id="analytics1" type="googleanalytics" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" aria-hidden="true" style="width: 1px; height: 1px;" hidden="">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-55229247-2"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<amp-image-lightbox id="lightbox1" layout="nodisplay" class="i-amphtml-element i-amphtml-layout-nodisplay i-amphtml-built" hidden="" i-amphtml-layout="nodisplay"></amp-image-lightbox>
+<button class="btn-sidebaramp" on="tap:sidebar.toggle"></button>
+<amp-sidebar id="sidebar" layout="nodisplay" side="right" class="i-amphtml-element i-amphtml-layout-nodisplay i-amphtml-overlay i-amphtml-scrollable i-amphtml-built" hidden="" i-amphtml-layout="nodisplay" role="menu" tabindex="-1">
+<amp-img alt="close sidebar" class="amp-close-image i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built" height="20" on="tap:sidebar.close" role="button" src="https://ampbyexample.com/img/ic_close_black_18dp_2x.png" tabindex="0" width="20" i-amphtml-layout="fixed" i-amphtml-auto-lightbox-visited="" style="width: 20px; height: 20px;"></amp-img>
+<div class="amp-sidebar-profile"><amp-img alt="Pusat Ilmu" height="100" layout="responsive" src="https://lh4.googleusercontent.com/-h_7ubbqUk8E/AAAAAAAAAAI/AAAAAAAAAUM/d_F2nvcKbeE/s512-c/photo.jpg" width="100" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" i-amphtml-layout="responsive" i-amphtml-auto-lightbox-visited=""><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 100%;"></i-amphtml-sizer></amp-img></div>
+<span class="amp-sidebar-about"><p>Pusat Ilmu Secara Detil</p>
+<p class="soc-icon">
+<span><a href="https://web.facebook.com/pusat.ilmu.7" itemprop="sameAs" target="_blank" title="Facebook">
+<svg viewBox="0 0 24 24">
+<path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
+</svg></a></span>
+<span><a href="https://twitter.com/pusat_ilmu" itemprop="sameAs" target="_blank" title="Twitter">
+<svg viewBox="0 0 24 24">
+<path d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28,17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path>
+</svg></a></span>
+<span><a href="https://plus.google.com/u/0/+androidmaker" itemprop="sameAs" target="_blank" title="Google Plus">
+<svg viewBox="0 0 24 24">
+<path d="M20,2A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V4C2,2.89 2.9,2 4,2H20M20,12H18V10H17V12H15V13H17V15H18V13H20V12M9,11.29V13H11.86C11.71,13.71 11,15.14 9,15.14C7.29,15.14 5.93,13.71 5.93,12C5.93,10.29 7.29,8.86 9,8.86C10,8.86 10.64,9.29 11,9.64L12.36,8.36C11.5,7.5 10.36,7 9,7C6.21,7 4,9.21 4,12C4,14.79 6.21,17 9,17C11.86,17 13.79,15 13.79,12.14C13.79,11.79 13.79,11.57 13.71,11.29H9Z"></path>
+</svg></a></span>
+<span class="youtube"><a href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="sameAs" target="_blank" title="YouTube">
+<svg viewBox="0 0 24 24">
+<path d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z"></path>
+</svg></a></span>
+</p>
+</span>
+<nav>
+<ul>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.com/">Home</a></li>
+<li><amp-accordion class="i-amphtml-element i-amphtml-layout-container i-amphtml-built" i-amphtml-layout="container">
+<section>
+<h6 id="16_AMP_header_0" class="i-amphtml-accordion-header" role="button" aria-controls="16_AMP_content_0" aria-expanded="false" tabindex="0">
+<span class="show-more">Web</span>
+<span class="show-less">Web</span>
+<svg viewBox="0 0 24 24"><path d="M7,10L12,15L17,10H7Z" fill="#000000"></path></svg>
+</h6>
+<ul class="mobilemenu i-amphtml-accordion-content" id="16_AMP_content_0" aria-labelledby="16_AMP_header_0" role="region">
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/search/label/HTML" itemprop="url" target="_blank" title="HTML"><span itemprop="name">HTML</span></a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/search/label/Bootstrap" itemprop="url" target="_blank" title="Bootstrap"><span itemprop="name">Bootstrap</span></a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="url" title="Sub Link 3"><span itemprop="name">CSS</span></a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/search/label/php" itemprop="url" target="_blank" title="PHP"><span itemprop="name">PHP</span></a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/search/label/Jquery" itemprop="url" target="_blank" title="Jquery"><span itemprop="name">Jquery</span></a></li>
+</ul>
+</section>
+</amp-accordion>
+</li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/p/tutorial-android-studio.html" itemprop="url" title="About">Android Studio</a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/p/html-html-head-style-p-background-color.html" itemprop="url" title="About">Contoh Kasus Pembuatan Web</a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.com/p/tutorial-dasar-dasar-html_25.html" itemprop="url" title="About">Dasar-dasar HTML</a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/p/panduan-bahasa-pemrograman-php-secara.html" itemprop="url" title="About">Dasar-dasar PHP</a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.co.id/p/about.html" itemprop="url" title="About">About</a></li>
+<li><amp-accordion class="i-amphtml-element i-amphtml-layout-container i-amphtml-built" i-amphtml-layout="container">
+<section>
+<h6 id="80_AMP_header_0" class="i-amphtml-accordion-header" role="button" aria-controls="80_AMP_content_0" aria-expanded="false" tabindex="0">
+<span class="show-more">Contact</span>
+<span class="show-less">Contact</span>
+</h6>
+<p class="contact-box i-amphtml-accordion-content" id="80_AMP_content_0" aria-labelledby="80_AMP_header_0" role="region">
+<span class="contact-me"><svg viewBox="0 0 24 24">
+<path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path>
+</svg> androidmaker@gmail.com</span>
+<span class="contact-me"><svg viewBox="0 0 24 24">
+<path d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z"></path>
+</svg> @pusat_ilmu</span>
+</p>
+</section>
+</amp-accordion>
+</li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="url" title="Privacy">Privacy</a></li>
+<li><a class="sidebaramp" href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="url" title="Sitemap">Sitemap</a></li>
+</ul>
+</nav>
+<button class="i-amphtml-screen-reader" tabindex="-1">Close the sidebar</button></amp-sidebar>
+<div itemprop="mainContentOfPage" itemscope="itemscope" itemtype="https://schema.org/WebPageElement">
+<div class="fixed" id="judulblog">
+<div class="content-wrapper">
+<header itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<p class="title" itemprop="headline">
+<a href="https://ilmu-detil.blogspot.com/" itemprop="url" title="Pusat Ilmu Secara Detil"><span itemprop="name"><amp-img alt="Logo" height="35" src="https://lh4.googleusercontent.com/-h_7ubbqUk8E/AAAAAAAAAAI/AAAAAAAAAUM/d_F2nvcKbeE/s512-c/photo.jpg" title="Pusat Ilmu Secara Detil" width="60" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 60px; height: 35px; --loader-delay-offset:87ms !important;" i-amphtml-auto-lightbox-visited=""><img decoding="async" alt="Logo" title="Pusat Ilmu Secara Detil" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/photo.jpg" class="i-amphtml-fill-content i-amphtml-replaced-content" i-amphtml-auto-lightbox-visited=""></amp-img>
+Pusat Ilmu Secara Detil</span></a>
+</p>
+</div>
+<div class="descriptionwrapper">
+<p class="description" itemprop="description"><span>Tutorial tentang web,pemrograman php, Bootstrap, Jquery, Bahasa perancis,Database,Pemrograman Dekstop, Dunia IT, Android Studio</span></p>
+</div>
+</div>
+</div></div>
+<div class="clear"></div>
+</div>
+</header><!-- end header-wrapper -->
+<div class="mobile-hide">
+<nav class="page-menu" itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<ul>
+<li><a href="https://ilmu-detil.blogspot.co.id/p/about.html" itemprop="url" title="About"><span itemprop="name">About</span></a></li>
+<li><a href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="url" title="Contact"><span itemprop="name">Contact</span></a></li>
+<li><a href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html#" itemprop="url" title="Privacy"><span itemprop="name">Privacy</span></a></li>
+<li><a href="http://cdn.rawgit.com/androidmaker155/dtc-ilmu/c2ee20b6/sitemap.html" itemprop="url" title="Sitemap"><span itemprop="name">Sitemap</span></a></li>
+</ul>
+<div class="clear"></div>
+</nav>
+<div class="clear"></div>
+<div class="search-wrapper">
+<div id="search-box">
+<div itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/WebSite">
+<meta content="https://ilmu-detil.blogspot.com/" itemprop="url">
+<!--<form action='https://ilmu-detil.blogspot.com/search' itemprop='potentialAction' itemscope='itemscope' itemtype='http://schema.org/SearchAction' method='get' target='_blank'> <meta content='https://ilmu-detil.blogspot.com/search?q={q}' itemprop='target'/> <input class='search-form' id='feed-q-input' itemprop='query-input' name='q' placeholder='Search' required='required' type='text'/> <button class='search-button' title='Search' type='submit'><i class='material-icons'>&#59574;</i></button> </form> -->
+<!-- Form search untuk google adsense -->
+<form action="https://cdn.staticaly.com/gh/androidmaker155/dtc-ilmu/f9aa6a44/searchresult.html" method="get" novalidate="" target="_blank" amp-novalidate="" class="i-amphtml-form">
+<input name="cx" type="hidden" value="partner-pub-7650566126694797:4305580325">
+<input name="cof" type="hidden" value="FORID:10">
+<input name="ie" type="hidden" value="UTF-8">
+<input class="search-form" id="feed-q-input" itemprop="query-input" name="q" placeholder="Search" required="required" type="text">
+<button class="search-button" title="Search" type="submit"><i class="material-icons"></i></button>
+</form>
+<!-- Akhir dari Form search untuk google adsense -->
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="thumb-wrapper">
+<div class="judul_item">
+<div class="content-wrapper">
+<p>Pembuatan Tabel dengan JTable pada Pemrograman Java</p>
+<div class="post-firstimage slideInUp">
+<div class="firstimage">
+<amp-img alt="" height="350" layout="responsive" src="https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s200/cover.JPG" width="600" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" i-amphtml-auto-lightbox-visited="" lightbox="i-amphtml-auto-lightbox-0" on="tap:amp-lightbox-gallery.activate"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 58.3333%;"></i-amphtml-sizer><img decoding="async" alt="" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/cover(2).JPG" class="i-amphtml-fill-content i-amphtml-replaced-content" i-amphtml-auto-lightbox-visited=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+<div class="content-wrapper">
+<div id="outer-wrapper">
+<div itemscope="itemscope" itemtype="http://schema.org/Blog">
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="breadcrumbs" id="breadcrumbs">
+<div id="bread-crumbs">
+<span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://ilmu-detil.blogspot.com/" itemprop="url" title="Home"><span itemprop="title"><i class="material-icons"></i> Home&nbsp;</span></a></span>&nbsp;<i class="material-icons"></i>
+<span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://ilmu-detil.blogspot.com/search/label/java?max-results=15" itemprop="url" title="java"><span itemprop="title">java</span></a>
+<i class="material-icons"></i>
+</span>
+<span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://ilmu-detil.blogspot.com/search/label/Pemrograman?max-results=15" itemprop="url" title="Pemrograman"><span itemprop="title">Pemrograman</span></a></span>
+<i class="material-icons"></i>
+<span>Pembuatan Tabel dengan JTable pada Pemrograman Java</span>
+</div></div>
+<div class="blog-posts hfeed">
+<!--Can't find substitution for tag [defaultAdStart]-->
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<article class="post hentry" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<div class="home-post">
+<meta content="   Pada akhir pembelajaran tutorial pemrograman java kali ini, diharapkan kita dapat memahami tentang fungsi JTable serta dapat mengimplemen..." property="twitter:description">
+<div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+<meta content="https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s200/cover.JPG" itemprop="url">
+<meta content="700" itemprop="width">
+<meta content="700" itemprop="height">
+</div>
+<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+<meta content="https://2.bp.blogspot.com/-z_neu_jdmF4/VbVr4STl7mI/AAAAAAAAhiQ/-ykM7LgN2Es/s600/logo-ka.png" itemprop="url">
+<meta content="600" itemprop="width">
+<meta content="600" itemprop="height">
+</div>
+<meta content="Pusat Ilmu Secara Detil" itemprop="name">
+</div>
+<div id="judul-post">
+<h1 class="post-title entry-title" itemprop="headline">
+<a href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html" itemprop="url mainEntityOfPage" title="Pembuatan Tabel dengan JTable pada Pemrograman Java">Pembuatan Tabel dengan JTable pada Pemrograman Java</a>
+</h1>
+</div>
+<div class="postmeta">
+<h3 class="date-header">
+<span class="post-author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<span class="fn author">
+<a class="g-profile" href="https://www.blogger.com/profile/07564732866905299730" itemprop="url" rel="author" title="author profile">
+<span itemprop="name">Android Maker</span>
+</a>
+</span>
+<meta content="" itemprop="image">
+</span>
+<span class="clock">
+<i class="material-icons"></i>
+<a class="updated" href="https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished dateModified" title="2016-07-21T10:44:00-07:00">
+Thursday, July 21, 2016</abbr></a></span>
+</h3>
+</div>
+<div class="clear"></div>
+<div class="postabovead">
+<amp-ad data-ad-client="ca-pub-7650566126694797" data-ad-slot="2733533465" height="250" type="adsense" width="300" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" data-amp-slot-index="0" data-a4a-upgrade-type="amp-ad-network-adsense-impl" style="width: 300px; height: 250px; --loader-delay-offset:87ms !important;">
+<div fallback=""><div class="i-amphtml-ad-default-holder" data-ad-holder-text="Ad"></div></div><amp-analytics sandbox="true" trigger="immediate" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" aria-hidden="true" style="width: 1px; height: 1px;" hidden=""><script type="application/json">{"requests":{"csi":"https://csi.gstatic.com/csi?"},"transport":{"xhrpost":false},"triggers":{"adRequestStart":{"on":"ad-request-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afs_lvt.${viewerLastVisibleTime}~afs.${time}"}},"adResponseEnd":{"on":"ad-response-end","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afe.${time}"}},"adRenderStart":{"on":"ad-render-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ast.${scheduleTime}~ars_lvt.${viewerLastVisibleTime}~ars.${time}","qqid":"${qqid}"}},"adIframeLoaded":{"on":"ad-iframe-loaded","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ail.${time}"}}},"extraUrlParams":{"s":"ampad","ctx":"2","c":"${correlator}","slotId":"${slotId}","puid":"${requestCount}~${timestamp}"}}</script></amp-analytics><iframe src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/ads.html" name="{&quot;width&quot;:300,&quot;height&quot;:250,&quot;_context&quot;:{&quot;ampcontextVersion&quot;:&quot;2111242025001&quot;,&quot;ampcontextFilepath&quot;:&quot;https://3p.ampproject.net/2111242025001/ampcontext-v0.js&quot;,&quot;sourceUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;canonicalUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;pageViewId&quot;:&quot;7284&quot;,&quot;location&quot;:{&quot;href&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;},&quot;startTime&quot;:1639142156340,&quot;tagName&quot;:&quot;AMP-AD&quot;,&quot;mode&quot;:{&quot;localDev&quot;:false,&quot;development&quot;:false,&quot;esm&quot;:false,&quot;test&quot;:false,&quot;rtvVersion&quot;:&quot;012111242025001&quot;},&quot;canary&quot;:false,&quot;hidden&quot;:false,&quot;initialLayoutRect&quot;:{&quot;left&quot;:142,&quot;top&quot;:590,&quot;width&quot;:300,&quot;height&quot;:250},&quot;domFingerprint&quot;:&quot;2417601277&quot;,&quot;experimentToggles&quot;:{&quot;canary&quot;:false,&quot;a4aProfilingRate&quot;:false,&quot;doubleclickSraExp&quot;:false,&quot;doubleclickSraReportExcludedBlock&quot;:true,&quot;flexAdSlots&quot;:false,&quot;flexible-bitrate&quot;:false,&quot;ios-fixed-no-transfer&quot;:false,&quot;disable-a4a-non-sd&quot;:true,&quot;amp-cid-backup&quot;:true,&quot;story-ad-placements&quot;:false,&quot;story-disable-animations-first-page&quot;:true,&quot;story-load-first-page-only&quot;:true,&quot;story-load-inactive-outside-viewport&quot;:true,&quot;amp-story-page-attachment-ui-v2&quot;:true,&quot;amp-sticky-ad-to-amp-ad-v4&quot;:false,&quot;amp-story-desktop-one-panel&quot;:true,&quot;amp-story-first-page-max-bitrate&quot;:false,&quot;story-ad-page-outlink&quot;:false},&quot;sentinel&quot;:&quot;0-28913215044036442588&quot;,&quot;initialIntersection&quot;:{&quot;time&quot;:1912.2999999970198,&quot;rootBounds&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:1280,&quot;height&quot;:609,&quot;bottom&quot;:609,&quot;right&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:0},&quot;boundingClientRect&quot;:{&quot;left&quot;:142,&quot;top&quot;:590,&quot;width&quot;:300,&quot;height&quot;:250,&quot;bottom&quot;:840,&quot;right&quot;:442,&quot;x&quot;:142,&quot;y&quot;:590},&quot;intersectionRect&quot;:{&quot;left&quot;:142,&quot;top&quot;:590,&quot;width&quot;:300,&quot;height&quot;:19,&quot;bottom&quot;:609,&quot;right&quot;:442,&quot;x&quot;:142,&quot;y&quot;:590},&quot;intersectionRatio&quot;:0.076}}}" height="250" width="300" title="3rd party ad content" role="region" aria-label="Advertisement" tabindex="0" data-amp-3p-sentinel="0-28913215044036442588" allow="sync-xhr &#39;none&#39;;" frameborder="0" allowfullscreen="" allowtransparency="" scrolling="no" marginwidth="0" marginheight="0" class="i-amphtml-fill-content" id="google_ads_iframe_1" style="width: 300px; height: 250px;"></iframe></amp-ad>
+</div>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<meta content="   Pada akhir pembelajaran tutorial pemrograman java kali ini, diharapkan kita dapat memahami tentang fungsi JTable serta dapat mengimplemen..." itemprop="description">
+<div class="post-body entry-content" id="post-body-4680448270729969679" itemprop="articleBody">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="separator" style="clear: both; text-align: center;">
+<a href="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/cover(2).JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="170" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/cover(2).JPG" width="200" i-amphtml-auto-lightbox-visited=""></a></div>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Pada akhir pembelajaran tutorial pemrograman java kali ini, diharapkan kita dapat memahami tentang fungsi JTable serta dapat mengimplementasikannya dengan dua teknik yang berbeda.</span><br>
+<a name="more"></a><br>
+<span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;">Pembahasan tutorial tentang pembuatan tabel berbasis web begitu banyak beredar di internet, namun tutorial pemrograman berbasis desktop terutama bahasa java yang membahas tentang pembuatan tabel masih dirasakan sedikit. Oleh karena itu, dalam pemrograman java kali ini kita akan membuat tabel dengan menggunakan JTable.</span><br>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><br></span>
+<br>
+<h2 style="text-align: left;">
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Apa itu JTable ?</span></h2>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">JTable adalah salah satu komponen dari package SWING yang dapat digunakan untuk menampilkan/mengedit data dua dimensi dalam bentuk tabel, seperti spreadsheet.</span><br>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><br></span>
+<br>
+<h2 style="text-align: left;">
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Membuat Tabel dengan JTable</span></h2>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Lazimnya seperti kebanyakan, sebuah tabel pastinya memiliki kolom dan baris. Untuk mendeklarasikan nama kolom, yang akan menjadi nama judul pada kolom dapat dilakukan dengan Object Array seperti berikut:</span><br>
+<pre class="  language-javascript" style="background: rgb(39, 40, 34); border-radius: 0.3em; color: #f8f8f2; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 16px; line-height: 24px; margin-bottom: 0.5em; margin-top: 0.5em; max-height: 30em; overflow: auto; padding: 1em; tab-size: 4; text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px; word-break: normal; word-wrap: normal;"><code class="  language-javascript" style="background: none; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; line-height: 1.5; margin: 0px; padding: 0px; tab-size: 4; text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px; word-break: normal; word-spacing: normal; word-wrap: normal;">Object columnNames<span class="token punctuation" style="margin: 0px; padding: 0px;">[</span><span class="token punctuation" style="margin: 0px; padding: 0px;">]</span> <span class="token operator" style="margin: 0px; padding: 0px;">=</span> <span class="token punctuation" style="margin: 0px; padding: 0px;">{</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Id"</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Name"</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Address"</span> <span class="token punctuation" style="margin: 0px; padding: 0px;">}</span></code></pre>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><br></span>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Sedangkan untuk pengisian datanya dilakukan object array dua dimensi seperti contoh berikut :</span><br>
+<pre class="  language-javascript" style="background: rgb(39, 40, 34); border-radius: 0.3em; color: #f8f8f2; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 16px; line-height: 24px; margin-bottom: 0.5em; margin-top: 0.5em; max-height: 30em; overflow: auto; padding: 1em; tab-size: 4; text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px; word-break: normal; word-wrap: normal;"><code class="  language-javascript" style="background: none; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; line-height: 1.5; margin: 0px; padding: 0px; tab-size: 4; text-shadow: rgba(0, 0, 0, 0.298039) 0px 1px; word-break: normal; word-spacing: normal; word-wrap: normal;">Object rowData<span class="token punctuation" style="margin: 0px; padding: 0px;">[</span><span class="token punctuation" style="margin: 0px; padding: 0px;">]</span><span class="token punctuation" style="margin: 0px; padding: 0px;">[</span><span class="token punctuation" style="margin: 0px; padding: 0px;">]</span> <span class="token operator" style="margin: 0px; padding: 0px;">=</span> <span class="token punctuation" style="margin: 0px; padding: 0px;">{</span><span class="token punctuation" style="margin: 0px; padding: 0px;">{</span> <span class="token number" style="color: #ae81ff; margin: 0px; padding: 0px;">1</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Doni Aria"</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Jl.Watumujur No.10 Malang"</span> <span class="token punctuation" style="margin: 0px; padding: 0px;">}</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span>
+                      <span class="token punctuation" style="margin: 0px; padding: 0px;">{</span> <span class="token number" style="color: #ae81ff; margin: 0px; padding: 0px;">2</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Desi Fitria"</span><span class="token punctuation" style="margin: 0px; padding: 0px;">,</span> <span class="token string" style="color: #a6e22e; margin: 0px; padding: 0px;">"Jl.Wisma Permai XXI No.12 Surabaya"</span> <span class="token punctuation" style="margin: 0px; padding: 0px;">}</span> 
+<span class="token punctuation" style="margin: 0px; padding: 0px;">}</span><span class="token punctuation" style="margin: 0px; padding: 0px;">;</span></code></pre>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Kemudian pembuatan tabelnya menggunakan Object columnNames dan Object rowData:&nbsp;</span><br>
+<span style="color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace;"><span style="font-size: 14.4px; line-height: 22.8571px;">JTable table = new JTable(data, columnNames);</span></span><br>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><br></span>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Dalam pembuatan tabel, kita dapat memanfaatkan dua constructor JTable :</span><br>
+<ul style="text-align: left;">
+<li style="text-align: justify;"><span style="background-color: #f9f2f4;"><span style="color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace;"><span style="background-color: #f9f2f4; color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: 14.4px; line-height: 22.8571px;">JTable(Object[][] rowData, Object[] columnNames) </span><span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px;">(Cara Pertama)</span></span></span></li>
+<li><span style="background-color: #f9f2f4;"><span style="color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace;"><span style="font-size: 14.4px; line-height: 22.8571px;">JTable(Vector rowData, Vector columnNames) &nbsp; &nbsp; &nbsp;&nbsp;</span></span></span><span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;">(Cara Kedua)</span></li>
+</ul>
+<br>
+<h2 style="text-align: left;">
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Pembuatan Tabel dengan menggunakan JTable Cara Pertama</span></h2>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Pada contoh pembuatan tabel model cara pertama, kita akan menggunakan :&nbsp;</span><span style="background-color: #f9f2f4; color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: 14.4px; line-height: 22.8571px; text-align: justify;">Table(Object[][] rowData, Object[] columnNames).&nbsp;</span><span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;">Berikut ini adalah contohnya :</span><br>
+<pre style="background: rgb(42, 33, 28); color: #bdae9d; font-family: Consolas, &quot;Lucida Console&quot;, &quot;DejaVu Sans Mono&quot;, Monaco, &quot;Courier New&quot;, monospace; font-size: 0.9333em; font-stretch: normal; line-height: 1.5em; padding: 4px;"><span style="color: #43a8ed; font-weight: 700;">import</span> java.awt.BorderLayout;
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JFrame;
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JScrollPane;
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JTable;
+
+<span style="color: #43a8ed; font-weight: 700;">public</span> <span style="color: #43a8ed; font-weight: 700;">class</span> <span style="text-decoration: underline;">JTableObject</span> {
+  <span style="color: #43a8ed; font-weight: 700;">public</span> <span style="color: #43a8ed; font-weight: 700;">static</span> <span style="color: #7290d9; font-weight: 700;">void</span> main(<span style="color: #43a8ed; font-weight: 700;">String</span> args[]) {
+    JFrame frame <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    <span style="color: #6d79de; font-weight: 700;">Object</span> rowData[][] <span style="color: #43a8ed; font-weight: 700;">=</span> { { <span style="color: #44aa43;">1</span>, <span style="color: #049b0a;">"Doni Aria"</span>, <span style="color: #049b0a;">"Jl.Watumujur No.10 Malang"</span> },
+                           { <span style="color: #44aa43;">2</span>, <span style="color: #049b0a;">"Desi Fitria"</span>, <span style="color: #049b0a;">"Jl.Wisma Permai XXI No.12 Surabaya"</span> } 
+    };
+    
+    <span style="color: #6d79de; font-weight: 700;">Object</span> <span style="color: #7290d9; font-weight: 700;">columnNames</span>[] <span style="color: #43a8ed; font-weight: 700;">=</span> { <span style="color: #049b0a;">"Id"</span>, <span style="color: #049b0a;">"Name"</span>, <span style="color: #049b0a;">"Address"</span> };
+    JTable table <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JTable(rowData, <span style="color: #7290d9; font-weight: 700;">columnNames</span>);
+
+    JScrollPane scrollPane <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JScrollPane(table);
+    frame.<span style="color: #7290d9; font-weight: 700;">add</span>(scrollPane, BorderLayout.CENTER);
+    frame.<span style="color: #7290d9; font-weight: 700;">setSize</span>(<span style="color: #44aa43;">300</span>, <span style="color: #44aa43;">150</span>);
+    frame.setVisible(<span style="color: #585cf6; font-weight: 700;">true</span>);
+  }
+}</pre>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Output dari program diatas ditunjukkan oleh Gambar.1 dibawah ini :</span><br>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="https://2.bp.blogspot.com/-McMJgNOr8QE/V5EG8_mgidI/AAAAAAAACc8/M9dmtSyyOJk1q_7DPV3WHOxQyEfNDMkDQCLcB/s1600/gambar1.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="145" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/gambar1.PNG" width="640" i-amphtml-auto-lightbox-visited=""></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gambar.1</td></tr>
+</tbody></table>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;"><br></span>
+<br>
+<h2 style="text-align: left;">
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Pembuatan Tabel dengan menggunakan JTable Cara Kedua</span></h2>
+<span style="background-color: white; border: 0px; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; font-stretch: inherit; line-height: 28.9px; margin: 0px; padding: 0px; text-align: justify; vertical-align: baseline;">Pada contoh pembuatan tabel model cara kedua, kita akan menggunakan :&nbsp;</span><span style="background-color: #f9f2f4; color: #c7254e; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: 14.4px; line-height: 22.8571px; text-align: justify;"><span style="font-size: 14.4px; line-height: 22.8571px; text-align: left;">JTable(Vector rowData, Vector columnNames)</span>.&nbsp;</span><span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;">Berikut ini adalah contohnya :</span><br>
+<pre style="background: rgb(42, 33, 28); color: #bdae9d; font-family: Consolas, &quot;Lucida Console&quot;, &quot;DejaVu Sans Mono&quot;, Monaco, &quot;Courier New&quot;, monospace; font-size: 0.9333em; font-stretch: normal; line-height: 1.5em; padding: 4px;"><span style="color: #43a8ed; font-weight: 700;">import</span> java.awt.BorderLayout;
+<span style="color: #43a8ed; font-weight: 700;">import</span> java.util.Vector;
+
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JFrame;
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JScrollPane;
+<span style="color: #43a8ed; font-weight: 700;">import</span> javax.swing.JTable;
+
+<span style="color: #43a8ed; font-weight: 700;">public</span> <span style="color: #43a8ed; font-weight: 700;">class</span> <span style="text-decoration: underline;">JTableVector</span> {
+  <span style="color: #43a8ed; font-weight: 700;">public</span> <span style="color: #43a8ed; font-weight: 700;">static</span> <span style="color: #7290d9; font-weight: 700;">void</span> main(<span style="color: #43a8ed; font-weight: 700;">String</span> args[]) {
+    JFrame frame <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt; rowOne <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt;();
+    rowOne.addElement(<span style="color: #049b0a;">"1"</span>);
+    rowOne.addElement(<span style="color: #049b0a;">"Doni Aria"</span>);
+    rowOne.addElement(<span style="color: #049b0a;">"Jl.Watumujur No.10 Malang"</span>);
+    
+    Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt; rowTwo <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt;();
+    rowTwo.addElement(<span style="color: #049b0a;">"2"</span>);
+    rowTwo.addElement(<span style="color: #049b0a;">"Desi Fitria"</span>);
+    rowTwo.addElement(<span style="color: #049b0a;">"Jl.Wisma Permai XXI No.12 Surabaya"</span>);
+    
+    Vector&lt;Vector&gt; rowData <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> Vector&lt;Vector&gt;();
+    rowData.addElement(rowOne);
+    rowData.addElement(rowTwo);
+    
+    Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt; <span style="color: #7290d9; font-weight: 700;">columnNames</span> <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> Vector&lt;<span style="color: #43a8ed; font-weight: 700;">String</span>&gt;();
+    <span style="color: #7290d9; font-weight: 700;">columnNames</span>.addElement(<span style="color: #049b0a;">"Id"</span>);
+    <span style="color: #7290d9; font-weight: 700;">columnNames</span>.addElement(<span style="color: #049b0a;">"Name"</span>);
+    <span style="color: #7290d9; font-weight: 700;">columnNames</span>.addElement(<span style="color: #049b0a;">"Address"</span>);
+    JTable table <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JTable(rowData, <span style="color: #7290d9; font-weight: 700;">columnNames</span>);
+
+    JScrollPane scrollPane <span style="color: #43a8ed; font-weight: 700;">=</span> <span style="color: #43a8ed; font-weight: 700;">new</span> JScrollPane(table);
+    frame.<span style="color: #7290d9; font-weight: 700;">add</span>(scrollPane, BorderLayout.CENTER);
+    frame.<span style="color: #7290d9; font-weight: 700;">setSize</span>(<span style="color: #44aa43;">300</span>, <span style="color: #44aa43;">150</span>);
+    frame.setVisible(<span style="color: #585cf6; font-weight: 700;">true</span>);
+
+  }
+}</pre>
+<span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;">Output dari program diatas sama seperti yang ditunjukkan oleh Gambar.1. Dengan demikian kita telah mengetahui dua cara membuat tabel dengan menggunakan JTable.</span><br>
+<span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;"><br></span>
+<span style="background-color: white; color: #333333; font-family: &quot;open sans&quot; , sans-serif; font-size: 17px; line-height: 28.9px; text-align: justify;"><br></span></div>
+<div class="clear"></div>
+</div>
+<div class="underpostad">
+<amp-ad data-ad-client="ca-pub-7650566126694797" data-ad-slot="6296051860" height="250" layout="responsive" type="adsense" width="728" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" data-amp-slot-index="1" data-a4a-upgrade-type="amp-ad-network-adsense-impl"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 34.3407%;"></i-amphtml-sizer>
+<div fallback=""><div class="i-amphtml-ad-default-holder" data-ad-holder-text="Ad"></div></div><amp-analytics sandbox="true" trigger="immediate" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" aria-hidden="true" style="width: 1px; height: 1px;" hidden=""><script type="application/json">{"requests":{"csi":"https://csi.gstatic.com/csi?"},"transport":{"xhrpost":false},"triggers":{"adRequestStart":{"on":"ad-request-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afs_lvt.${viewerLastVisibleTime}~afs.${time}"}},"adResponseEnd":{"on":"ad-response-end","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afe.${time}"}},"adRenderStart":{"on":"ad-render-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ast.${scheduleTime}~ars_lvt.${viewerLastVisibleTime}~ars.${time}","qqid":"${qqid}"}},"adIframeLoaded":{"on":"ad-iframe-loaded","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ail.${time}"}}},"extraUrlParams":{"s":"ampad","ctx":"2","c":"${correlator}","slotId":"${slotId}","puid":"${requestCount}~${timestamp}"}}</script></amp-analytics><iframe src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/ads(1).html" name="{&quot;width&quot;:728,&quot;height&quot;:250,&quot;_context&quot;:{&quot;ampcontextVersion&quot;:&quot;2111242025001&quot;,&quot;ampcontextFilepath&quot;:&quot;https://3p.ampproject.net/2111242025001/ampcontext-v0.js&quot;,&quot;sourceUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;canonicalUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;pageViewId&quot;:&quot;7284&quot;,&quot;location&quot;:{&quot;href&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;},&quot;startTime&quot;:1639142197535,&quot;tagName&quot;:&quot;AMP-AD&quot;,&quot;mode&quot;:{&quot;localDev&quot;:false,&quot;development&quot;:false,&quot;esm&quot;:false,&quot;test&quot;:false,&quot;rtvVersion&quot;:&quot;012111242025001&quot;},&quot;canary&quot;:false,&quot;hidden&quot;:false,&quot;initialLayoutRect&quot;:{&quot;left&quot;:142,&quot;top&quot;:4382,&quot;width&quot;:650,&quot;height&quot;:223},&quot;domFingerprint&quot;:&quot;3763245360&quot;,&quot;experimentToggles&quot;:{&quot;canary&quot;:false,&quot;a4aProfilingRate&quot;:false,&quot;doubleclickSraExp&quot;:false,&quot;doubleclickSraReportExcludedBlock&quot;:true,&quot;flexAdSlots&quot;:false,&quot;flexible-bitrate&quot;:false,&quot;ios-fixed-no-transfer&quot;:false,&quot;disable-a4a-non-sd&quot;:true,&quot;amp-cid-backup&quot;:true,&quot;story-ad-placements&quot;:false,&quot;story-disable-animations-first-page&quot;:true,&quot;story-load-first-page-only&quot;:true,&quot;story-load-inactive-outside-viewport&quot;:true,&quot;amp-story-page-attachment-ui-v2&quot;:true,&quot;amp-sticky-ad-to-amp-ad-v4&quot;:false,&quot;amp-story-desktop-one-panel&quot;:true,&quot;amp-story-first-page-max-bitrate&quot;:false,&quot;story-ad-page-outlink&quot;:false},&quot;sentinel&quot;:&quot;0-25513314931694191854&quot;,&quot;initialIntersection&quot;:{&quot;time&quot;:43106.90000000596,&quot;rootBounds&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:1280,&quot;height&quot;:609,&quot;bottom&quot;:609,&quot;right&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:0},&quot;boundingClientRect&quot;:{&quot;left&quot;:142,&quot;top&quot;:2082,&quot;width&quot;:650,&quot;height&quot;:223,&quot;bottom&quot;:2305,&quot;right&quot;:792,&quot;x&quot;:142,&quot;y&quot;:2082},&quot;intersectionRect&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:0,&quot;height&quot;:0,&quot;bottom&quot;:0,&quot;right&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},&quot;intersectionRatio&quot;:0}}}" height="250" width="728" title="3rd party ad content" role="region" aria-label="Advertisement" tabindex="0" data-amp-3p-sentinel="0-25513314931694191854" allow="sync-xhr &#39;none&#39;;" frameborder="0" allowfullscreen="" allowtransparency="" scrolling="no" marginwidth="0" marginheight="0" class="i-amphtml-fill-content" id="google_ads_iframe_3" style="width: 650px; height: 223px;"></iframe></amp-ad>
+<div class="clear"></div>
+</div>
+<h2 class="sharetitle">Share this:</h2>
+<div class="clear"></div>
+<div>
+<amp-social-share height="37" type="twitter" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined amp-social-share-twitter i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" role="button" tabindex="0" aria-label="Share by twitter">
+</amp-social-share>
+<amp-social-share height="37" type="gplus" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built" i-amphtml-layout="fixed" hidden="" style="width: 50px; height: 37px;"></amp-social-share>
+<amp-social-share data-param-app_id="145634995501895" height="37" type="facebook" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined amp-social-share-facebook i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" role="button" tabindex="0" aria-label="Share by facebook"></amp-social-share>
+<amp-social-share height="37" type="pinterest" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined amp-social-share-pinterest i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" role="button" tabindex="0" aria-label="Share by pinterest"></amp-social-share>
+<amp-social-share height="37" type="linkedin" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined amp-social-share-linkedin i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" role="button" tabindex="0" aria-label="Share by linkedin"></amp-social-share>
+<amp-social-share data-param-text="Ada yang keren lho, nyesel kalo ga buka.. kunjungi: https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html" data-share-endpoint="whatsapp://send" height="37" layout="fixed" type="whatsapp" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined amp-social-share-whatsapp i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" role="button" tabindex="0" aria-label="Share by whatsapp">
+<amp-img alt="Share via Whatsapp" height="37" layout="fixed" src="https://4.bp.blogspot.com/-nuWfSt-GHRc/WBsZe1kXxmI/AAAAAAAAH7c/gGKKNm32SkYqQthHzcptJrqk4GejHdjGgCK4B/s1600/wa.png" width="50" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 50px; height: 37px;" i-amphtml-auto-lightbox-visited=""><img decoding="async" alt="Share via Whatsapp" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/wa.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+</amp-social-share>
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="postmeta">
+<i class="material-icons md-24"></i>
+<span class="post-labels">
+<a href="https://ilmu-detil.blogspot.com/search/label/java?max-results=15" rel="tag nofollow" title="java">java</a>,
+<a href="https://ilmu-detil.blogspot.com/search/label/Pemrograman?max-results=15" rel="tag nofollow" title="Pemrograman">Pemrograman</a>
+</span>
+<span class="post-icons">
+</span>
+</div>
+<div class="clear"></div>
+</div>
+</article>
+<div class="related-wrapper" id="related-wrapper">
+<amp-iframe frameborder="0" height="420" layout="fixed-height" sandbox="allow-scripts allow-same-origin allow-modals allow-popups" scrolling="no" src="https://rawcdn.githack.com/malvinardi/blog/9d947a56e887d883b20c7d1af3c1663529f85fd6/related-6numpost-withthumb-amp.html?url=https://ilmu-detil.blogspot.com/" class="i-amphtml-element i-amphtml-layout-fixed-height i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed-height" style="height: 420px;">
+<iframe class="i-amphtml-fill-content" name="amp_iframe0" frameborder="0" scrolling="no" allow="" sandbox="allow-scripts allow-same-origin allow-modals allow-popups" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/related-6numpost-withthumb-amp.html"></iframe></amp-iframe>
+</div>
+<div class="halaman">
+<div class="blog-pager">
+<div class="halaman-kiri">
+<div class="isihalaman-kiri">
+<a class="blog-pager-newer-link" href="https://ilmu-detil.blogspot.com/2016/08/memahami-jbutton-pada-pemrograman-java.html" title="Newer Post">Next Post</a>
+<i class="material-icons panahkiri"></i>
+<div class="clear"></div>
+</div>
+</div>
+<div class="halaman-kanan">
+<div class="isihalaman-kanan">
+<a class="blog-pager-older-link" href="https://ilmu-detil.blogspot.com/2016/07/java-database-mysql.html" title="Older Post">Previous Post</a>
+<i class="material-icons panahkanan"></i>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="disqus-comments" id="disqus_comments">
+</div>
+</div>
+
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+</div>
+</div></div>
+</div>
+<div itemprop="mainEntity" itemscope="itemscope" itemtype="https://schema.org/WPSideBar">
+<aside id="sidebar-kanan">
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget FeaturedPost" data-version="1" id="FeaturedPost1">
+<h2 class="title">Featured Post</h2>
+<div class="post-summary">
+<amp-img alt="" class="image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" height="180" layout="responsive" src="https://4.bp.blogspot.com/-sHFH8JQj6CU/V1FWTVu69DI/AAAAAAAACR0/oSEX0Y0IbR0kEWOsuaJlQMOJT0SoAtkfQCLcB/s1600/web%2Bchart.PNG" title="" width="300" i-amphtml-layout="responsive" style="--loader-delay-offset:87ms !important;" i-amphtml-auto-lightbox-visited=""><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 60%;"></i-amphtml-sizer><img decoding="async" alt="" title="" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/web chart.PNG" class="i-amphtml-fill-content i-amphtml-replaced-content" i-amphtml-auto-lightbox-visited=""></amp-img>
+<h3><a href="https://ilmu-detil.blogspot.com/2016/06/grafik-berbasis-web.html">Bagaimana Cara Membuat Grafik Berbasis Web</a></h3>
+<p>
+ Dalam ulasan kali ini, kita akan coba mengulas tentang pembuatan beberapa jenis grafik pada sebuah website dengan menggunakan librari highc...
+</p>
+</div>
+</div><div class="widget PopularPosts" data-version="1" id="PopularPosts1">
+<h2>Popular Posts</h2>
+<div class="widget-content popular-posts">
+<ul>
+<li>
+<div class="item-thumbnail-only">
+<div class="item-thumbnail">
+<a href="https://ilmu-detil.blogspot.com/2016/10/cara-menambah-warna-pada-tabel-html.html" target="_blank">
+<amp-img alt="Cara Menambah Warna pada Tabel HTML" height="70" src="https://2.bp.blogspot.com/-_jwO5VfB4eE/WA4wSdbvSMI/AAAAAAAACwg/UCH8m1EnrtYkQRxBvss-G_98B1s5hXRVQCLcB/w100/cover_html.PNG" title="Cara Menambah Warna pada Tabel HTML" width="100" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 100px; height: 70px;" i-amphtml-auto-lightbox-visited=""><img decoding="async" alt="Cara Menambah Warna pada Tabel HTML" title="Cara Menambah Warna pada Tabel HTML" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/cover_html.PNG" class="i-amphtml-fill-content i-amphtml-replaced-content" i-amphtml-auto-lightbox-visited=""></amp-img>
+</a>
+</div>
+<div class="item-title"><a href="https://ilmu-detil.blogspot.com/2016/10/cara-menambah-warna-pada-tabel-html.html">Cara Menambah Warna pada Tabel HTML</a></div>
+</div>
+<div class="clear"></div>
+</li>
+<li>
+<div class="item-thumbnail-only">
+<div class="item-thumbnail">
+<a href="https://ilmu-detil.blogspot.com/2015/10/tutorial-mysql-membuat-database-akademik.html" target="_blank">
+<amp-img alt="Tutorial MySQL : Membuat Database Akademik" height="70" src="https://1.bp.blogspot.com/-7z0PbMW8rW8/XH-CEUN3eCI/AAAAAAAADrg/WturSMt988Y_E7P_2IX-YW4zW82TEPYzACLcBGAs/w100/cov_dbakademik.PNG" title="Tutorial MySQL : Membuat Database Akademik" width="100" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" style="width: 100px; height: 70px;" i-amphtml-auto-lightbox-visited=""><img decoding="async" alt="Tutorial MySQL : Membuat Database Akademik" title="Tutorial MySQL : Membuat Database Akademik" src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/cov_dbakademik.PNG" class="i-amphtml-fill-content i-amphtml-replaced-content" i-amphtml-auto-lightbox-visited=""></amp-img>
+</a>
+</div>
+<div class="item-title"><a href="https://ilmu-detil.blogspot.com/2015/10/tutorial-mysql-membuat-database-akademik.html">Tutorial MySQL : Membuat Database Akademik</a></div>
+</div>
+<div class="clear"></div>
+</li>
+</ul>
+</div>
+</div><div class="widget HTML" data-version="1" id="HTML5">
+<div class="widget-content">
+<amp-ad data-ad-client="ca-pub-7650566126694797" data-ad-slot="2733533465" height="250" type="adsense" width="300" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive" data-amp-slot-index="2" data-a4a-upgrade-type="amp-ad-network-adsense-impl"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 83.3333%;"></i-amphtml-sizer>
+ <div fallback=""><div class="i-amphtml-ad-default-holder" data-ad-holder-text="Ad"></div></div><amp-analytics sandbox="true" trigger="immediate" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="fixed" aria-hidden="true" style="width: 1px; height: 1px;" hidden=""><script type="application/json">{"requests":{"csi":"https://csi.gstatic.com/csi?"},"transport":{"xhrpost":false},"triggers":{"adRequestStart":{"on":"ad-request-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afs_lvt.${viewerLastVisibleTime}~afs.${time}"}},"adResponseEnd":{"on":"ad-response-end","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"afe.${time}"}},"adRenderStart":{"on":"ad-render-start","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ast.${scheduleTime}~ars_lvt.${viewerLastVisibleTime}~ars.${time}","qqid":"${qqid}"}},"adIframeLoaded":{"on":"ad-iframe-loaded","request":"csi","sampleSpec":{"sampleOn":"a4a-csi-${pageViewId}","threshold":1},"selector":"amp-ad","selectionMethod":"closest","extraUrlParams":{"met.a4a":"ail.${time}"}}},"extraUrlParams":{"s":"ampad","ctx":"2","c":"${correlator}","slotId":"${slotId}","puid":"${requestCount}~${timestamp}"}}</script></amp-analytics><iframe src="./Pembuatan Tabel dengan JTable pada Pemrograman Java_files/ads(2).html" name="{&quot;width&quot;:300,&quot;height&quot;:250,&quot;_context&quot;:{&quot;ampcontextVersion&quot;:&quot;2111242025001&quot;,&quot;ampcontextFilepath&quot;:&quot;https://3p.ampproject.net/2111242025001/ampcontext-v0.js&quot;,&quot;sourceUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;canonicalUrl&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;,&quot;pageViewId&quot;:&quot;7284&quot;,&quot;location&quot;:{&quot;href&quot;:&quot;https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html&quot;},&quot;startTime&quot;:1639142156347,&quot;tagName&quot;:&quot;AMP-AD&quot;,&quot;mode&quot;:{&quot;localDev&quot;:false,&quot;development&quot;:false,&quot;esm&quot;:false,&quot;test&quot;:false,&quot;rtvVersion&quot;:&quot;012111242025001&quot;},&quot;canary&quot;:false,&quot;hidden&quot;:false,&quot;initialLayoutRect&quot;:{&quot;left&quot;:822,&quot;top&quot;:1180,&quot;width&quot;:300,&quot;height&quot;:250},&quot;domFingerprint&quot;:&quot;3586698616&quot;,&quot;experimentToggles&quot;:{&quot;canary&quot;:false,&quot;a4aProfilingRate&quot;:false,&quot;doubleclickSraExp&quot;:false,&quot;doubleclickSraReportExcludedBlock&quot;:true,&quot;flexAdSlots&quot;:false,&quot;flexible-bitrate&quot;:false,&quot;ios-fixed-no-transfer&quot;:false,&quot;disable-a4a-non-sd&quot;:true,&quot;amp-cid-backup&quot;:true,&quot;story-ad-placements&quot;:false,&quot;story-disable-animations-first-page&quot;:true,&quot;story-load-first-page-only&quot;:true,&quot;story-load-inactive-outside-viewport&quot;:true,&quot;amp-story-page-attachment-ui-v2&quot;:true,&quot;amp-sticky-ad-to-amp-ad-v4&quot;:false,&quot;amp-story-desktop-one-panel&quot;:true,&quot;amp-story-first-page-max-bitrate&quot;:false,&quot;story-ad-page-outlink&quot;:false},&quot;sentinel&quot;:&quot;0-781176630814194633&quot;,&quot;initialIntersection&quot;:{&quot;time&quot;:1919.1000000089407,&quot;rootBounds&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:1280,&quot;height&quot;:609,&quot;bottom&quot;:609,&quot;right&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:0},&quot;boundingClientRect&quot;:{&quot;left&quot;:822,&quot;top&quot;:1180,&quot;width&quot;:300,&quot;height&quot;:250,&quot;bottom&quot;:1430,&quot;right&quot;:1122,&quot;x&quot;:822,&quot;y&quot;:1180},&quot;intersectionRect&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:0,&quot;height&quot;:0,&quot;bottom&quot;:0,&quot;right&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},&quot;intersectionRatio&quot;:0}}}" height="250" width="300" title="3rd party ad content" role="region" aria-label="Advertisement" tabindex="0" data-amp-3p-sentinel="0-781176630814194633" allow="sync-xhr &#39;none&#39;;" frameborder="0" allowfullscreen="" allowtransparency="" scrolling="no" marginwidth="0" marginheight="0" class="i-amphtml-fill-content" id="google_ads_iframe_2" style="width: 300px; height: 250px;"></iframe></amp-ad>
+</div>
+</div><div class="widget Label" data-version="1" id="Label1">
+<h2>Labels</h2>
+<div class="widget-content list-label-widget-content">
+<ul class="label-show">
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Adsense">Adsense<span class="label-count" dir="ltr">1</span></a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Android">Android<span class="label-count" dir="ltr">22</span></a>
+<span dir="ltr">(22)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/AngularJS">AngularJS<span class="label-count" dir="ltr">3</span></a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Bahasa%20Perancis">Bahasa Perancis<span class="label-count" dir="ltr">19</span></a>
+<span dir="ltr">(19)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Bing%20Maps">Bing Maps<span class="label-count" dir="ltr">2</span></a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Bootstrap">Bootstrap<span class="label-count" dir="ltr">57</span></a>
+<span dir="ltr">(57)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Google%20Maps">Google Maps<span class="label-count" dir="ltr">4</span></a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/HTML">HTML<span class="label-count" dir="ltr">16</span></a>
+<span dir="ltr">(16)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Insight">Insight<span class="label-count" dir="ltr">33</span></a>
+<span dir="ltr">(33)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/ionic%20framework">ionic framework<span class="label-count" dir="ltr">5</span></a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/java">java<span class="label-count" dir="ltr">25</span></a>
+<span dir="ltr">(25)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Jquery">Jquery<span class="label-count" dir="ltr">20</span></a>
+<span dir="ltr">(20)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Linux">Linux<span class="label-count" dir="ltr">3</span></a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Map">Map<span class="label-count" dir="ltr">7</span></a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/MySQL">MySQL<span class="label-count" dir="ltr">4</span></a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/opencv">opencv<span class="label-count" dir="ltr">1</span></a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Pemrograman">Pemrograman<span class="label-count" dir="ltr">29</span></a>
+<span dir="ltr">(29)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Pemrograman%20C">Pemrograman C<span class="label-count" dir="ltr">6</span></a>
+<span dir="ltr">(6)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Pemrograman%20Web">Pemrograman Web<span class="label-count" dir="ltr">160</span></a>
+<span dir="ltr">(160)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/php">php<span class="label-count" dir="ltr">78</span></a>
+<span dir="ltr">(78)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Sitemap%20Generator">Sitemap Generator<span class="label-count" dir="ltr">1</span></a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Software">Software<span class="label-count" dir="ltr">2</span></a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Tips%20%26%20Trik%20Android">Tips &amp; Trik Android<span class="label-count" dir="ltr">1</span></a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="https://ilmu-detil.blogspot.com/search/label/Web%20Programming">Web Programming<span class="label-count" dir="ltr">109</span></a>
+<span dir="ltr">(109)</span>
+</li>
+</ul>
+</div>
+</div></div>
+</div>
+<div class="clear"></div>
+</aside>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<footer itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+<div id="footer-wrapper">
+<div class="content-wrapper">
+<div class="footer section" id="footer1"><div class="widget HTML" data-version="1" id="HTML4">
+<div class="widget-content">
+<amp-img alt="Install Choco" height="35" on="tap:lightbox1" role="button" src="https://lh4.googleusercontent.com/-h_7ubbqUk8E/AAAAAAAAAAI/AAAAAAAAAUM/d_F2nvcKbeE/s512-c/photo.jpg" tabindex="0" width="60" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built" i-amphtml-layout="fixed" style="width: 60px; height: 35px;" i-amphtml-auto-lightbox-visited="">
+</amp-img>
+<p>Pusat Ilmu Secara Detil</p>
+</div>
+</div></div>
+<div class="footer section" id="footer2"><div class="widget HTML" data-version="1" id="HTML3">
+<h2 class="title">Statistik</h2>
+<div class="widget-content">
+</div>
+</div></div>
+<div class="footer section" id="footer3"><div class="widget HTML" data-version="1" id="HTML1">
+<h2 class="title">Dukungan</h2>
+<div class="widget-content">
+<a href="http://ilmu-detil.blogspot.co.id/p/tutorial-android-studio.html"><h5>Android Studio</h5></a>
+
+<a href="https://ilmu-detil.blogspot.com/p/tutorial-dasar-dasar-html_25.html"><h5>Dasar-dasar HTML</h5></a>
+
+<a href="http://ilmu-detil.blogspot.co.id/p/panduan-bahasa-pemrograman-php-secara.html"><h5>Dasar-dasar PHP</h5></a>
+
+<a href="http://ilmu-detil.blogspot.co.id/p/html-html-head-style-p-background-color.html"><h5>Contoh-contoh Kasus Pembuatan Web </h5></a>
+</div>
+</div></div>
+<div class="footer section" id="footer4"><div class="widget HTML" data-version="1" id="HTML2">
+<h2 class="title">Tools</h2>
+<div class="widget-content">
+<a href="https://ilmu-detil.blogspot.co.id/search/label/Adsense"><h5>Adsense Converter</h5></a>
+<a href="https://ilmu-detil.blogspot.co.id/search/label/Sitemap%20Generator"><h5>Sitemap Generator</h5></a>
+</div>
+</div></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="creditpic">
+<div class="content-wrapper">
+<div class="credit">
+Copyright © <span itemprop="copyrightYear">2021</span>
+<span itemprop="copyrightHolder" itemscope="itemscope" itemtype="https://schema.org/Organization"><a href="https://ilmu-detil.blogspot.com/" itemprop="url" title="Pusat Ilmu Secara Detil"><span itemprop="name">Pusat Ilmu Secara Detil</span></a></span>
+<div class="credit-right">Created by <a href="http://www.kompiajaib.com/" title="Kompi Ajaib">Kompi Ajaib</a> Proudly powered by <a href="https://www.blogger.com/" title="Blogger">Blogger</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</footer>
+</div>
+
+<!--
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3630122430-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY46lAuoCa7MA1XoCMRsACmHhTSWdQ:1638961097689';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3963559602023712541','//ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html','3963559602023712541');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3963559602023712541', 'title': 'Pusat Ilmu Secara Detil', 'url': 'https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html', 'canonicalUrl': 'https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html', 'homepageUrl': 'https://ilmu-detil.blogspot.com/', 'searchUrl': 'https://ilmu-detil.blogspot.com/search', 'canonicalHomepageUrl': 'https://ilmu-detil.blogspot.com/', 'blogspotFaviconUrl': 'https://ilmu-detil.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pusat Ilmu Secara Detil - Atom\x22 href\x3d\x22https://ilmu-detil.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Pusat Ilmu Secara Detil - RSS\x22 href\x3d\x22https://ilmu-detil.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pusat Ilmu Secara Detil - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/3963559602023712541/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pusat Ilmu Secara Detil - Atom\x22 href\x3d\x22https://ilmu-detil.blogspot.com/feeds/4680448270729969679/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-2846319934068545', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/3f6f2296c2541ccc', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '4680448270729969679', 'postImageThumbnailUrl': 'https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s72-c/cover.JPG', 'postImageUrl': 'https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s200/cover.JPG', 'pageName': 'Pembuatan Tabel dengan JTable pada Pemrograman Java', 'pageTitle': 'Pusat Ilmu Secara Detil: Pembuatan Tabel dengan JTable pada Pemrograman Java', 'metaDescription': 'Tutorial Java yang mengupas tentang dua teknik pembuatan tabel dengan JTable pada Java'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Pembuatan Tabel dengan JTable pada Pemrograman Java', 'description': 'Tutorial Java yang mengupas tentang dua teknik pembuatan tabel dengan JTable pada Java', 'featuredImage': 'https://2.bp.blogspot.com/-Kp7992dITw0/VK01DwztxdI/AAAAAAAAAoM/JbbyIg5Ch6E/s200/cover.JPG', 'url': 'https://ilmu-detil.blogspot.com/2016/07/membuat-tabel-dengan-jtable-java.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 4680448270729969679}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2908359363-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'sidebar', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'footer1', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'footer2', document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'footer3', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'footer4', document.getElementById('HTML2'), {}, 'displayModeFull'));
+</script>
+</body>--> 
+<amp-lightbox-gallery layout="nodisplay" id="amp-lightbox-gallery" class="i-amphtml-element i-amphtml-layout-nodisplay i-amphtml-built" hidden="" i-amphtml-layout="nodisplay"><div class="i-amphtml-lbg"><div class="i-amphtml-lbg-mask"></div></div></amp-lightbox-gallery></body></html>

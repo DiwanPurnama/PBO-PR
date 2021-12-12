@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://azuharu.net/parsing-json-menggunakan-json-simple-java/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v17.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan</title>
+	<meta name="description" content="Tutorial Parsing JSON Menggunakan JSON-Simple Java. Cara membaca dan mengambil data dari file JSON menggunakan bahasa pemrograman Java. Contoh penggunaan">
+	<link rel="canonical" href="https://azuharu.net/parsing-json-menggunakan-json-simple-java/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan">
+	<meta property="og:description" content="Tutorial Parsing JSON Menggunakan JSON-Simple Java. Cara membaca dan mengambil data dari file JSON menggunakan bahasa pemrograman Java. Contoh penggunaan">
+	<meta property="og:url" content="https://azuharu.net/parsing-json-menggunakan-json-simple-java/">
+	<meta property="og:site_name" content="Azuharu ~ Another Dream">
+	<meta property="article:published_time" content="2013-10-21T01:59:06+00:00">
+	<meta property="article:modified_time" content="2013-10-21T09:39:48+00:00">
+	<meta property="og:image" content="https://azuharu.net/wp-content/uploads/2013/10/json-logo.gif">
+	<meta property="og:image:width" content="160">
+	<meta property="og:image:height" content="160">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="azuharu">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="2 minutes">
+	<script src="https://e.dtscout.com/e/?v=1a&amp;pid=5200&amp;site=1&amp;l=https%3A%2F%2Fazuharu.net%2Fparsing-json-menggunakan-json-simple-java%2F&amp;j=https%3A%2F%2Fwww.google.com%2F" async="" type="text/javascript"></script><script src="https://e.dtscout.com/e/?v=1a&amp;pid=5200&amp;site=1&amp;l=https%3A%2F%2Fazuharu.net%2Fparsing-json-menggunakan-json-simple-java%2F&amp;j=https%3A%2F%2Fwww.google.com%2F" async="" type="text/javascript"></script><script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/all.js.download" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/all.js(1).download"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://azuharu.net/#website","url":"https://azuharu.net/","name":"Azuharu ~ Another Dream","description":"Berbagi Ilmu Berbagi Pengalaman","publisher":{"@id":"https://azuharu.net/#/schema/person/7c37bca4535936de86fd51a2cae9adba"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://azuharu.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#primaryimage","inLanguage":"en-US","url":"https://azuharu.net/wp-content/uploads/2013/10/json-logo.gif","contentUrl":"https://azuharu.net/wp-content/uploads/2013/10/json-logo.gif","width":160,"height":160,"caption":"parsing json menggunakan json-simple java"},{"@type":"WebPage","@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#webpage","url":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/","name":"Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan","isPartOf":{"@id":"https://azuharu.net/#website"},"primaryImageOfPage":{"@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#primaryimage"},"datePublished":"2013-10-21T01:59:06+00:00","dateModified":"2013-10-21T09:39:48+00:00","description":"Tutorial Parsing JSON Menggunakan JSON-Simple Java. Cara membaca dan mengambil data dari file JSON menggunakan bahasa pemrograman Java. Contoh penggunaan","breadcrumb":{"@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://azuharu.net/parsing-json-menggunakan-json-simple-java/"]}]},{"@type":"BreadcrumbList","@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://azuharu.net/"},{"@type":"ListItem","position":2,"name":"Parsing JSON Menggunakan JSON-Simple Java"}]},{"@type":"Article","@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#article","isPartOf":{"@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#webpage"},"author":{"@id":"https://azuharu.net/#/schema/person/7c37bca4535936de86fd51a2cae9adba"},"headline":"Parsing JSON Menggunakan JSON-Simple Java","datePublished":"2013-10-21T01:59:06+00:00","dateModified":"2013-10-21T09:39:48+00:00","mainEntityOfPage":{"@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#webpage"},"wordCount":244,"commentCount":0,"publisher":{"@id":"https://azuharu.net/#/schema/person/7c37bca4535936de86fd51a2cae9adba"},"image":{"@id":"https://azuharu.net/parsing-json-menggunakan-json-simple-java/#primaryimage"},"thumbnailUrl":"https://azuharu.net/wp-content/uploads/2013/10/json-logo.gif","keywords":["Java","JSON","Parsing"],"articleSection":["Java","JSON"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://azuharu.net/parsing-json-menggunakan-json-simple-java/#respond"]}]},{"@type":["Person","Organization"],"@id":"https://azuharu.net/#/schema/person/7c37bca4535936de86fd51a2cae9adba","name":"azuharu","image":{"@type":"ImageObject","@id":"https://azuharu.net/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/5722fdfb303188ac3cef01673c4cec8e?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/5722fdfb303188ac3cef01673c4cec8e?s=96&d=mm&r=g","caption":"azuharu"},"logo":{"@id":"https://azuharu.net/#personlogo"},"description":"Seorang programmer yang suka berbagi informasi seputar teknologi terkini."}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Azuharu ~ Another Dream » Feed" href="https://azuharu.net/feed/">
+<link rel="alternate" type="application/rss+xml" title="Azuharu ~ Another Dream » Comments Feed" href="https://azuharu.net/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Azuharu ~ Another Dream » Parsing JSON Menggunakan JSON-Simple Java Comments Feed" href="https://azuharu.net/parsing-json-menggunakan-json-simple-java/feed/">
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/azuharu.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="generate-fonts-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/style.min.css" media="all">
+<style id="wp-block-library-inline-css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/mediaelementplayer-legacy.min.css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/wp-mediaelement.min.css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/styles.css" media="all">
+<link rel="stylesheet" id="cookie-law-info-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/cookie-law-info-public.css" media="all">
+<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/cookie-law-info-gdpr.css" media="all">
+<link rel="stylesheet" id="codemirror-blocks--css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/blocks.style.build.min.css" media="all">
+<link rel="stylesheet" id="generate-style-grid-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/unsemantic-grid.min.css" media="all">
+<link rel="stylesheet" id="generate-style-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/style.min(1).css" media="all">
+<style id="generate-style-inline-css">
+body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}body .grid-container{max-width:1100px;}.wp-block-group__inner-container{max-width:1100px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:70px;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}.has-contrast-color{color:#222222;}.has-contrast-background-color{background-color:#222222;}.has-contrast-2-color{color:#575760;}.has-contrast-2-background-color{background-color:#575760;}.has-contrast-3-color{color:#b2b2be;}.has-contrast-3-background-color{background-color:#b2b2be;}.has-base-color{color:#f0f0f0;}.has-base-background-color{background-color:#f0f0f0;}.has-base-2-color{color:#f7f8f9;}.has-base-2-background-color{background-color:#f7f8f9;}.has-base-3-color{color:#ffffff;}.has-base-3-background-color{background-color:#ffffff;}.has-accent-color{color:#1e73be;}.has-accent-background-color{background-color:#1e73be;}body, button, input, select, textarea{font-family:"Merriweather", serif;}body{line-height:1.8;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-title{font-size:45px;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}h1{font-family:"Lora", serif;font-weight:300;font-size:40px;}h2{font-weight:300;font-size:30px;}h3{font-size:20px;}h4{font-size:inherit;}h5{font-size:inherit;}@media (max-width:768px){.main-title{font-size:20px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a{color:#3a3a3a;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#1e73be;}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#ffffff;background-color:#035a9e;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#035a9e;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#ffffff;background-color:#035a9e;}.main-navigation ul ul{background-color:#035a9e;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#bbd2e8;background-color:#035a9e;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#bbd2e8;background-color:#035a9e;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#222222;}.site-info a{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.inside-top-bar{padding:10px;}.inside-header{padding:40px;}.site-main .wp-block-group__inner-container{padding:40px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.site-info{padding:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.site-info{padding-right:10px;padding-left:10px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}@media (max-width: 768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}
+.main-navigation .slideout-toggle a:before,.slide-opened .slideout-overlay .slideout-exit:before{font-family:GeneratePress;}.slideout-navigation .dropdown-menu-toggle:before{content:"\f107" !important;}.slideout-navigation .sfHover > a .dropdown-menu-toggle:before{content:"\f106" !important;}
+.navigation-branding .main-title{font-weight:bold;text-transform:none;font-size:45px;}@media (max-width: 768px){.navigation-branding .main-title{font-size:20px;}}
+</style>
+<link rel="stylesheet" id="generate-mobile-style-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/mobile.min.css" media="all">
+<link rel="stylesheet" id="generate-font-icons-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/font-icons.min.css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/font-awesome.min.css" media="all">
+<link rel="stylesheet" id="generate-blog-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/style-min.css" media="all">
+<link rel="stylesheet" id="generate-navigation-branding-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/navigation-branding.min.css" media="all">
+<style id="generate-navigation-branding-inline-css">
+@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}.navigation-branding .main-title a, .navigation-branding .main-title a:hover, .navigation-branding .main-title a:visited{color:#ffffff;}}.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 1110px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation:not(.slideout-navigation) .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;}.main-navigation:not(.slideout-navigation) .inside-navigation{-ms-flex-wrap:wrap;flex-wrap:wrap;display:-webkit-box;display:-ms-flexbox;display:flex;}.nav-aligned-center .navigation-branding, .nav-aligned-left .navigation-branding{margin-right:auto;}.nav-aligned-center  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-center  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav{margin-right:0px;}}
+</style>
+<link rel="stylesheet" id="jetpack_css-css" href="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/jetpack.css" media="all">
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script id="cookie-law-info-js-extra">
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#62a329","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"1","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/azuharu.net\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/cookie-law-info-public.js.download" id="cookie-law-info-js"></script>
+<link rel="https://api.w.org/" href="https://azuharu.net/wp-json/"><link rel="alternate" type="application/json" href="https://azuharu.net/wp-json/wp/v2/posts/3619"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://azuharu.net/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://azuharu.net/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="https://azuharu.net/?p=3619">
+<link rel="alternate" type="application/json+oembed" href="https://azuharu.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fazuharu.net%2Fparsing-json-menggunakan-json-simple-java%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://azuharu.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fazuharu.net%2Fparsing-json-menggunakan-json-simple-java%2F&amp;format=xml">
+<style type="text/css" id="simple-css-output">nav#nav-below.paging-navigation span.page-numbers.current { font-weight:700; border:solid 1px #1e72bd; background:#1e72bd; padding:3px 5px 3px 5px; margin-right:10px; color:#fff;} nav#nav-below.paging-navigation a.page-numbers { font-weight:400; border:solid 1px #1e72bd; background:transparent; padding:3px 5px 3px 5px; margin-right:10px;} nav#nav-below.paging-navigation a.page-numbers:hover { font-weight:400; border:solid 1px #1e72bd; background:#1e72bd; padding:3px 5px 3px 5px; margin-right:10px; color:#fff;} .widget ul li { border-bottom: dashed 1px #1E73BE;}</style><style type="text/css">img#wpstats{display:none}</style>
+		<link rel="pingback" href="https://azuharu.net/xmlrpc.php">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://azuharu.net/wp-content/uploads/2013/10/azuharu-logo1-80x80.png" sizes="32x32">
+<link rel="icon" href="https://azuharu.net/wp-content/uploads/2013/10/azuharu-logo1-250x250.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://azuharu.net/wp-content/uploads/2013/10/azuharu-logo1-250x250.png">
+<meta name="msapplication-TileImage" content="https://azuharu.net/wp-content/uploads/2013/10/azuharu-logo1-300x300.png">
+<script type="text/javascript" async="" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/js15_as.js.download"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+<body data-rsssl="1" class="post-template-default single single-post postid-3619 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center sticky-menu-fade mobile-header right-sidebar nav-below-header one-container contained-header active-footer-widgets-3 nav-aligned-left header-aligned-left dropdown-hover featured-image-active" itemtype="https://schema.org/Blog" itemscope="">
+	<a class="screen-reader-text skip-link" href="https://azuharu.net/parsing-json-menggunakan-json-simple-java/#content" title="Skip to content">Skip to content</a>		<header class="site-header grid-container grid-parent" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope="">
+			<div class="inside-header grid-container grid-parent">
+				<div class="site-branding-container"><div class="site-logo">
+					<a href="https://azuharu.net/" title="Azuharu ~ Another Dream" rel="home">
+						<img class="header-image is-logo-image" alt="Azuharu ~ Another Dream" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/azuharu-logo1.png" title="Azuharu ~ Another Dream">
+					</a>
+				</div><div class="site-branding">
+						<p class="main-title" itemprop="headline">
+					<a href="https://azuharu.net/" rel="home">
+						Azuharu ~ Another Dream
+					</a>
+				</p>
+						<p class="site-description" itemprop="description">
+					Berbagi Ilmu Berbagi Pengalaman
+				</p>
+					</div></div>			</div>
+		</header>
+				<nav id="mobile-header" class="main-navigation mobile-header-navigation has-branding" itemtype="https://schema.org/SiteNavigationElement" itemscope="">
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="navigation-branding"><p class="main-title" itemprop="headline">
+						<a href="https://azuharu.net/" rel="home">
+							Azuharu ~ Another Dream
+						</a>
+					</p></div>					<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+						<span class="mobile-menu">Menu</span>					</button>
+					<div id="mobile-menu" class="main-nav"><ul id="menu-azuharu" class=" menu sf-menu"><li id="menu-item-4242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4242"><a href="https://azuharu.net/kumpulan-tutorial-pemrograman/">Pemrograman<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a title="Index Tutorial Membuat Search Engine Menggunakan Lucene" href="https://azuharu.net/tutorial-membuat-search-engine-lucene/">Apache Lucene</a></li>
+	<li id="menu-item-3297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3297"><a title="Tutorial Aplikasi Java dan Database MySQL" href="https://azuharu.net/tutorial-java-dan-database-mysql/">Java dan MySQL</a></li>
+	<li id="menu-item-1244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1244"><a title="Membuat Aplikasi Data Entry Menggunakan SQLite Java" href="https://azuharu.net/membuat-aplikasi-data-entry-dengan-database-sqlite-completed/">Data Entry SQLite</a></li>
+	<li id="menu-item-1372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1372"><a title="Membangun dan Membuat Website Menggunakan CodeIgniter" href="https://azuharu.net/membuat-web-dengan-codeigniter/">Tutorial CodeIgniter</a></li>
+	<li id="menu-item-5496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5496"><a title="Tutorial Yii Bahasa Indonesia" href="https://azuharu.net/tutorial-yii-bahasa-indonesia/">Tutorial Yii 1</a></li>
+</ul>
+</li>
+<li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608"><a title="Kumpulan Tutorial Linux, Ubuntu, Kubuntu, Elementary OS, dll" href="https://azuharu.net/kumpulan-tutorial-linux/">Linux</a></li>
+<li id="menu-item-3102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3102"><a href="https://azuharu.net/category/windows/">Windows</a></li>
+<li id="menu-item-6123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6123"><a href="https://azuharu.net/tentang-kami/">Tentang Kami</a></li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+				<nav class="main-navigation grid-container grid-parent sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope="">
+			<div class="inside-navigation grid-container grid-parent">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-azuharu-1" class=" menu sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4242"><a href="https://azuharu.net/kumpulan-tutorial-pemrograman/">Pemrograman<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a title="Index Tutorial Membuat Search Engine Menggunakan Lucene" href="https://azuharu.net/tutorial-membuat-search-engine-lucene/">Apache Lucene</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3297"><a title="Tutorial Aplikasi Java dan Database MySQL" href="https://azuharu.net/tutorial-java-dan-database-mysql/">Java dan MySQL</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1244"><a title="Membuat Aplikasi Data Entry Menggunakan SQLite Java" href="https://azuharu.net/membuat-aplikasi-data-entry-dengan-database-sqlite-completed/">Data Entry SQLite</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1372"><a title="Membangun dan Membuat Website Menggunakan CodeIgniter" href="https://azuharu.net/membuat-web-dengan-codeigniter/">Tutorial CodeIgniter</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5496"><a title="Tutorial Yii Bahasa Indonesia" href="https://azuharu.net/tutorial-yii-bahasa-indonesia/">Tutorial Yii 1</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608"><a title="Kumpulan Tutorial Linux, Ubuntu, Kubuntu, Elementary OS, dll" href="https://azuharu.net/kumpulan-tutorial-linux/">Linux</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3102"><a href="https://azuharu.net/category/windows/">Windows</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6123"><a href="https://azuharu.net/tentang-kami/">Tentang Kami</a></li>
+</ul></div>			</div>
+		</nav>
+		
+	<div class="site grid-container container hfeed grid-parent" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
+		<main class="site-main" id="main">
+			
+<article id="post-3619" class="post-3619 post type-post status-publish format-standard has-post-thumbnail hentry category-java category-json tag-java tag-json tag-parsing" itemtype="https://schema.org/CreativeWork" itemscope="">
+	<div class="inside-article">
+		<div class="featured-image  page-header-image-single ">
+			<img width="160" height="160" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/json-logo.gif" class="attachment-full size-full" alt="parsing json menggunakan json-simple java" loading="lazy" itemprop="image">
+		</div>			<header class="entry-header" aria-label="Content">
+				<h1 class="entry-title" itemprop="headline">Parsing JSON Menggunakan JSON-Simple Java</h1>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2013-10-21T16:39:48+07:00" itemprop="dateModified">21 October, 2013</time><time class="entry-date published" datetime="2013-10-21T08:59:06+07:00" itemprop="datePublished">21 October, 2013</time></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope=""><a class="url fn n" href="https://azuharu.net/author/admin/" title="View all posts by azuharu" rel="author" itemprop="url"><span class="author-name" itemprop="name">azuharu</span></a></span></span> 		</div>
+					</header>
+			
+		<div class="entry-content" itemprop="text">
+			<p>Selamat pagi! Sudah lama rasanya saya tidak posting mengenai <a title="Tutorial Pemrograman" href="https://azuharu.net/">tutorial pemrograman</a>. Padahal banyak sekali yang ingin saya posting dalam hal pemrograman. Baiklah, kalau begitu saya mulai pagi ini dengan posting mengenai parse JSON</p>
+<p>Membaca file JSON atau yang biasa disebut dengan parsing dapat menggunakan berbagai macam library.&nbsp;Salah satu library yang dapat digunakan untuk memparsing file JSON adalah JSON-Simple. JSON-Simple menyediakan API untuk mengambil objek tertentu dari dalam file JSON.</p>
+<p>Pada post berikut ini saya akan memberikan sebuah studi kasus yang bertujuan untuk melakukan parsing terhadap sebuah file JSON.</p>
+<h2>Parsing JSON Menggunakan JSON-Simple Java</h2>
+<p>Awalnya saya mempunyai sebuah file bernama info.json. JSON tersebut adalah <a title="Cara Validasi JSON Secara Online" href="https://azuharu.net/json/cara-validasi-json-secara-online/">file json yang valid</a>. Isi dari file info.json tersebut adalah sebagai berikut.</p>
+<pre class="brush: text; gutter: true">{
+    "user-data" : {
+        "profile" : {
+            "name" : "azuharu"
+        },
+        "address" : {
+            "road" : "road-address",                        
+            "number" : "78"
+        },
+        "phone" : {
+            "mobile1" : 62850000001,
+            "mobile2" : 62850000002
+        }
+    }
+}</pre>
+<p>Yang akan saya lakukan adalah mengambil value name, road, number, dan nomor telepon dari file JSON tersebut. Data file JSON tersebut memang data dummy, tapi yang penting adalah bagaimana cara memparsingnya.</p>
+<p>Disini saya menggunakan library JSON-Simple.&nbsp;Library JSON-Simple dapat anda unduh di&nbsp;<a href="https://code.google.com/p/json-simple/downloads/list">https://code.google.com/p/json-simple/downloads/list</a></p>
+<h3>Source Code Parsing JSON JSONSimple</h3>
+<p>Kembali ke tujuan utama, buatlah project Java Application baru, di sini saya beri nama ReadInfo.&nbsp;Setelah itu tambahkan library JSON-Simple agar kita dapat memanggil fungsi yang disediakan library tersebut.</p>
+<p>Berdasarkan file json di atas, berikut ini adalah source code untuk mengambil objek.</p>
+<pre class="brush: java; gutter: true">import java.io.FileReader;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+/**
+ *
+ * @author Azuharu
+ */
+public class ReadInfo {
+    public static void main(String[] args) {
+
+        JSONParser jp = new JSONParser();
+
+        try {
+            Object object = jp.parse(new FileReader("C:\\Users\\Azuharu\\Documents\\NetBeansProjects\\ReadSiteInfo\\info.json"));
+            JSONObject jso = (JSONObject) object;
+
+            JSONObject userdata = (JSONObject) jso.get("user-data");
+            JSONObject profile = (JSONObject) userdata.get("profile");
+            JSONObject address = (JSONObject) userdata.get("address");
+            JSONObject phone = (JSONObject) userdata.get("phone");
+
+            String name = (String) profile.get("name");
+            String road = (String) address.get("road");
+            String number = (String) address.get("number");
+            Object mobile1 = phone.get("mobile1");
+            Object mobile2 = phone.get("mobile2");
+
+            System.out.println("name: "+name);
+            System.out.println("address: "+road+" "+number);
+            System.out.println("phone1: "+mobile1);
+            System.out.println("phone2: "+mobile2);
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}</pre>
+<p>Program tersebut jika dijalankan akan menghasilkan output sebagai berikut:</p>
+<blockquote><p>name: azuharu<br>
+address: road-address 78<br>
+phone1: 62850000001<br>
+phone2: 62850000002</p></blockquote>
+<p>Sekian tutorial&nbsp;<a title="Parsing JSON Menggunakan JSON-Simple Java" href="https://azuharu.net/json/parsing-json-menggunakan-json-simple-java/">Parsing JSON Menggunakan JSON-Simple Java</a>.&nbsp;Semoga bermanfaat</p>
+<!-- AI CONTENT END 1 -->
+		</div>
+
+				<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://azuharu.net/category/java/" rel="category tag">Java</a>, <a href="https://azuharu.net/category/json/" rel="category tag">JSON</a></span> <span class="tags-links"><span class="screen-reader-text">Tags </span><a href="https://azuharu.net/tag/java/" rel="tag">Java</a>, <a href="https://azuharu.net/tag/json/" rel="tag">JSON</a>, <a href="https://azuharu.net/tag/parsing/" rel="tag">Parsing</a></span> 		<nav id="nav-below" class="post-navigation" aria-label="Single Post">
+			<span class="screen-reader-text">Post navigation</span>
+
+			<div class="nav-previous"><span class="prev" title="Previous"><a href="https://azuharu.net/cara-validasi-json-secara-online/" rel="prev">Cara Validasi JSON Secara Online</a></span></div><div class="nav-next"><span class="next" title="Next"><a href="https://azuharu.net/paket-internet-tri-kenyang-download-2013/" rel="next">Paket Internet Tri Kenyang Download 2013</a></span></div>		</nav>
+				</footer>
+			</div>
+</article>
+
+			<div class="comments-area">
+				<div id="comments">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://azuharu.net/parsing-json-menggunakan-json-simple-java/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://azuharu.net/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea></p><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30" required="">
+<label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30" required="">
+<label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="3619" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1f7cc6dc26"></p><p style="display: none !important;"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js" name="ak_js" value="1639140322373"><script>document.getElementById( "ak_js" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			</div>
+
+					</main>
+	</div>
+
+	<div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
+	<div class="inside-right-sidebar">
+		
+		<aside id="recent-posts-2" class="widget inner-padding widget_recent_entries">
+		<h2 class="widget-title">Artikel Terbaru</h2>
+		<ul>
+											<li>
+					<a href="https://azuharu.net/cari-tahu-tentang-distributor-anlet-indonesia-di-sini/">Cari Tahu Tentang Distributor ANLET Indonesia di Sini!</a>
+									</li>
+											<li>
+					<a href="https://azuharu.net/universitas-pendidikan-muhammadiyah-sorong-mencetak-lulusan-terbaik-dan-handal/">Universitas Pendidikan Muhammadiyah Sorong Mencetak Lulusan Terbaik dan Handal</a>
+									</li>
+											<li>
+					<a href="https://azuharu.net/pentingnya-memilih-jas-pengantin-pria-yang-tepat/">Pentingnya Memilih Jas Pengantin Pria yang Tepat</a>
+									</li>
+											<li>
+					<a href="https://azuharu.net/ketahui-cara-agar-website-masuk-di-pencarian-google/">Ketahui Cara Agar Website Masuk di Pencarian Google</a>
+									</li>
+											<li>
+					<a href="https://azuharu.net/mini-militia-ff-2d-pastinya-seru-dan-menantang-adrenalin/">Mini Militia FF 2D Pastinya Seru dan Menantang Adrenalin</a>
+									</li>
+					</ul>
+
+		</aside><aside id="aio_facebook_like_widget-2" class="widget inner-padding aio_facebook_like_widget"><h2 class="widget-title">Like us</h2>        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/azuharu.net" data-width="260" data-tabs="" data-hide-cover="false" data-show-facepile="true" data-small-header="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=255&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fazuharu.net&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=260"><span style="vertical-align: bottom; width: 255px; height: 130px;"><iframe name="f3d3e279305a71" width="260px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/page.html" style="border: none; visibility: visible; width: 255px; height: 130px;" class=""></iframe></span></div>
+
+        </aside><aside id="recent-comments-2" class="widget inner-padding widget_recent_comments"><h2 class="widget-title">Komentar Terbaru</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wiboo.id/" rel="external nofollow ugc" class="url">Wiboo</a></span> on <a href="https://azuharu.net/tips-membaca-ebook-supaya-nyaman-menggunakan-adobe-reader/#comment-225992">Tips Membaca Ebook Supaya Nyaman Menggunakan Adobe Reader</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://markastoko.com/" rel="external nofollow ugc" class="url">Markas</a></span> on <a href="https://azuharu.net/membuat-web-dengan-codeigniter/#comment-225822">Tutorial Membuat Web dengan Codeigniter</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://umrohmuza.com/" rel="external nofollow ugc" class="url">umroh</a></span> on <a href="https://azuharu.net/membuat-web-dengan-codeigniter/#comment-225595">Tutorial Membuat Web dengan Codeigniter</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://banyusehat.com/" rel="external nofollow ugc" class="url">banyu</a></span> on <a href="https://azuharu.net/membuat-web-dengan-codeigniter/#comment-225293">Tutorial Membuat Web dengan Codeigniter</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://mastertaman.com/" rel="external nofollow ugc" class="url">Muza</a></span> on <a href="https://azuharu.net/membuat-web-dengan-codeigniter/#comment-225228">Tutorial Membuat Web dengan Codeigniter</a></li></ul></aside><aside id="text-2" class="widget inner-padding widget_text">			<div class="textwidget"><p><!-- Histats.com START (aync)--><br>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,2520012,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script><br>
+<noscript><a href="/" target="_blank" rel="noopener"><img src="//sstatic1.histats.com/0.gif?2520012&#038;101" alt="" border="0"></a></noscript><br>
+<!-- Histats.com END --></p>
+</div>
+		</aside>	</div>
+</div>
+
+	</div>
+</div>
+
+
+<div class="site-footer">
+			<footer class="site-info" aria-label="Site" itemtype="https://schema.org/WPFooter" itemscope="">
+			<div class="inside-site-info grid-container grid-parent">
+								<div class="copyright-bar">
+					©  2021 <a href="https://azuharu.net/">azuharu.net</a>				</div>
+			</div>
+		</footer>
+		</div>
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; position: fixed; display: block;"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish. <a role="button" tabindex="0" class="cli_settings_button" style="margin: 5px 20px; color: rgb(98, 163, 41);">Cookie settings</a><a role="button" tabindex="0" data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">ACCEPT</a></span></div><div id="cookie-law-info-again" style="display: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px;" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy &amp; Cookies Policy</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+	  	<button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+	  	</button>
+	  	<div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+							<div class="wt-cli-necessary-checkbox">
+                        <input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+                        <label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+                    </div>
+                    <span class="cli-necessary-caption">Always Enabled</span> 						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+								Non-necessary							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox" data-id="checkbox-non-necessary" checked="checked">
+                        <label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+								<div class="wt-cli-cookie-description">
+									Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+	  	</div>
+	  	<div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script>
+        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script><script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/regenerator-runtime.min.js.download" id="regenerator-runtime-js"></script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/wp-polyfill.min.js.download" id="wp-polyfill-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/azuharu.net\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/index.js.download" id="contact-form-7-js"></script>
+<!--[if lte IE 11]>
+<script src='https://azuharu.net/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.1.0' id='generate-classlist-js'></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/menu.min.js.download" id="generate-menu-js"></script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/comment-reply.min.js.download" id="comment-reply-js"></script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<script src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/e-202149.js.download" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.3',blog:'30051373',post:'3619',tz:'7',srv:'azuharu.net'} ]);
+	_stq.push([ 'clickTrackerInit', '30051373', '3619' ]);
+</script>
+
+
+
+<img src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/g.gif" alt="" width="6" height="5" id="wpstats"><script async="" type="text/javascript" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/0.php"></script><script async="" type="text/javascript" src="./Parsing JSON Menggunakan JSON-Simple Java dan Contoh Penggunaan_files/e.php"></script></body></html>
