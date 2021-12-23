@@ -17,7 +17,19 @@ import org.junit.jupiter.api.Nested;
  */
 public class AirportTest {
 
-    @DisplayName("Given there is a business flight")
+    @DisplayName("Given there is an economy flight")
+    @Nested
+    class EconomyFlightTest {
+
+        private Flight economyFlight;
+
+        @BeforeEach
+        void setUp() {
+            economyFlight = new EconomyFlight("1");
+        }
+       
+}
+@DisplayName("Given there is a business flight")
     @Nested
     class BusinessFlightTest {
 
@@ -25,25 +37,8 @@ public class AirportTest {
 
         @BeforeEach
         void setUp() {
-            businessFlight = new Flight("2", "Business");
+            businessFlight = new BusinessFlight("2");
         }
-
-        @Test
-        public void testBusinessFlightRegularPassenger() {
-            Passenger mike = new Passenger("Mike", false);
-            assertEquals(false, businessFlight.addPassenger(mike));
-            assertEquals(0, businessFlight.getPassengersList().size());
-            assertEquals(false, businessFlight.removePassenger(mike));
-            assertEquals(0, businessFlight.getPassengersList().size());
-        }
-
-        @Test
-        public void testBusinessFlightVipPassenger() {
-            Passenger james = new Passenger("James", true);
-            assertEquals(true, businessFlight.addPassenger(james));
-            assertEquals(1, businessFlight.getPassengersList().size());
-            assertEquals(false, businessFlight.removePassenger(james));
-            assertEquals(1, businessFlight.getPassengersList().size());
-        }
-    }
+      
+}
 }
